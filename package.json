@@ -1,0 +1,22 @@
+{
+  "name": "front-end-navigation",
+  "version": "1.0.0",
+  "description": "Chrome extensions for front-end development",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yhlben/front-end-navigation.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yhlben/front-end-navigation/issues"
+  },
+  "homepage": "https://github.com/yhlben/front-end-navigation#readme",
+  "dependencies": {
+    "vue": "^2.5.17"
+  }
+}

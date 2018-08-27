@@ -3,7 +3,7 @@
   "version": "1.0",
   "description": "我的newtab标签2!",
   "chrome_url_overrides" : {
-    "newtab": "myPage.html"
+    "newtab": "index.html"
   },
   "icons": {
     "16": "images/get_started16.png",

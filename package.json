@@ -4,7 +4,6 @@
   "description": "Chrome extensions for front-end development",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint --ext js --ext vue ./src --fix && stylelint ./src/* --fix",
     "dev": "webpack-dev-server --open",
     "build": "webpack"

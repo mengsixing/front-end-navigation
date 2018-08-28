@@ -1,27 +1,36 @@
 <template>
 	<div id="body">
 		<el-container>
-			<el-header>Header</el-header>
+			<!-- <el-header>
+				<Navigation />
+			</el-header> -->
 			<el-main>
-				<el-input placeholder="请输入内容" v-model="input5" class="input-with-select">
-					<el-select v-model="select" slot="prepend" placeholder="请选择">
-						<el-option label="餐厅名" value="1"></el-option>
-						<el-option label="订单号" value="2"></el-option>
-						<el-option label="用户电话" value="3"></el-option>
-					</el-select>
-					<el-button slot="append" icon="el-icon-search"></el-button>
-				</el-input>
+				<el-row>
+					<el-col :span="16" :offset="4">
+						<Search />
+					</el-col>
+				</el-row>
+				<div class="white-line"></div>
+				<el-row>
+					<Item />
+				</el-row>
 			</el-main>
-			<el-footer>Footer</el-footer>
+			<!-- <el-footer>Written by yhlben</el-footer> -->
 		</el-container>
 	</div>
 </template>
 
 <script>
+import Search from '~/components/Search.vue';
+import Item from '~/components/Item.vue';
 export default {
+	components:{
+		Search,
+		Item
+	},
 	data() {
 		return {
-			input5: '1231',
+			search: '',
 			select: ''
 		};
 	},
@@ -31,26 +40,36 @@ export default {
 
 
 <style lang="scss">
-.xxx {
-  flex: 1;
+.el-select .el-input {
+  width: 130px;
+}
+
+.input-with-select .el-input-group__prepend {
+  background-color: #fff;
 }
 
 .el-header,
 .el-footer {
-  background-color: #b3c0d1;
   color: #333;
   text-align: center;
   line-height: 60px;
 }
 
-.el-main {
-  background-color: #e9eef3;
-  color: #333;
-  text-align: center;
-  line-height: 160px;
+.el-footer {
+  background-color: #b3c0d1;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
-.body {
-  background-color: red;
+.white-line {
+  height: 12px;
+}
+
+.el-main {
+  position: absolute;
+  top: 60px;
+  bottom: 60px;
+  width: 100%;
 }
 </style>

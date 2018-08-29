@@ -1,7 +1,7 @@
 <template>
 	<div>
-		<el-row type="flex" align="bottom">
-			<el-col :span="1" :offset="23">
+		<el-row>
+			<el-col class="navigation-github" :span="1" :offset="23">
 				<a class="github" href="https://github.com/yhlben/front-end-navigation" target="_blank">
 					<img src="../assets/github.png" alt="github" />
 				</a>
@@ -17,15 +17,19 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.github {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  vertical-align: middle;
+.navigation-github {
+  text-align: right;
 
-  & > img {
-    width: 100%;
-    height: 100%;
+  .github {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+
+    & > img {
+      width: 100%;
+      height: 100%;
+    }
   }
 }
 </style>

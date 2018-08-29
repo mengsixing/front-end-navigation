@@ -15,7 +15,9 @@
 					<Item />
 				</el-row>
 			</el-main>
-			<!-- <el-footer>Written by yhlben</el-footer> -->
+			<el-footer height="35px">created by
+				<a target="_blank" href="https://github.com/yhlben">@yhlben</a>
+			</el-footer>
 		</el-container>
 	</div>
 </template>
@@ -54,14 +56,24 @@ export default {
 .el-footer {
   color: #333;
   text-align: center;
-  line-height: 60px;
-}
+  line-height: 50px;
 
-.el-footer {
-  background-color: #b3c0d1;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+  &.el-footer {
+    line-height: 35px;
+    background-color: #f2f2f2;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #666;
+    text-align: right;
+    padding-right: 20px;
+    font-size: 13px;
+
+    & > a {
+      text-decoration: none;
+      color: #666;
+    }
+  }
 }
 
 .white-line {
@@ -70,8 +82,8 @@ export default {
 
 .el-main {
   position: absolute;
-  top: 60px;
-  bottom: 60px;
+  top: 50px;
+  bottom: 35px;
   width: 100%;
 }
 </style>

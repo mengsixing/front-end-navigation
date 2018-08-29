@@ -32,7 +32,7 @@
 
 		<el-row>
 			<el-col :span="16" :offset="4" class="common-panel">
-				<el-row class="common-panel-title study-panel-title">经典博客</el-row>
+				<el-row class="common-panel-title study-panel-title">视频学习</el-row>
 				<el-row :gutter="20" class="common-panel-container">
 					<el-col :span="4" v-for="item in studyList" v-bind:key="item.name" class="common-panel-item">
 						<a :href="item.url" target="_blank" class="common-panel-item-a">

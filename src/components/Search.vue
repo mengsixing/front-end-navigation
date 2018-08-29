@@ -1,7 +1,7 @@
 <template>
 	<div class="search">
-		<img class="search-image" src="https://unsplash.it/1600/900?random" alt="banner">
-		<el-input placeholder="请输入内容" v-model="searchText" class="input-with-select" @keyup.enter.native="startSearch">
+		<img class="search-image" src="https://unsplash.it/1600/900?random" alt="每日一图">
+		<el-input placeholder="请输入内容" v-model="searchText" class="input-with-select" @change="modifyValue" @keyup.enter.native="startSearch">
 			<el-select v-model="searchType" slot="prepend" placeholder="请选择">
 				<el-option v-for="item in searchOptions" :label="item.label" :value="item.value" :key="item.label">
 				</el-option>
@@ -16,6 +16,7 @@ export default {
 	data() {
 		return {
 			searchText: '',
+			oldSearchText: '',
 			searchType: 1,
 			searchOptions:[
 				{
@@ -34,11 +35,17 @@ export default {
 	},
 	methods: {
 		startSearch(){
+			if(this.oldSearchText !== this.searchText) {
+				return;
+			}
 			switch(this.searchType){
 			case 1: window.open(`https://www.baidu.com/s?wd=${this.searchText}`); break;
 			case 2: window.open(`https://www.google.com/search?q=${this.searchText}`);break;
 			case 3: window.open(`https://cn.bing.com/search?q=${this.searchText}`);break;
 			}
+		},
+		modifyValue(){
+			this.oldSearchText = this.searchText;
 		}
 	}
 };

@@ -1,6 +1,6 @@
 <template>
 	<div class="search">
-		<img class="search-image" src="https://unsplash.it/1600/900?random" alt="每日一图">
+		<img class="search-image" src="http://source.unsplash.com/320x200" width="300" height="175" alt="每日一图">
 		<el-input placeholder="请输入内容" v-model="searchText" class="input-with-select" @change="modifyValue" @keyup.enter.native="startSearch">
 			<el-select v-model="searchType" slot="prepend" placeholder="请选择">
 				<el-option v-for="item in searchOptions" :label="item.label" :value="item.value" :key="item.label">
@@ -17,18 +17,25 @@ export default {
 		return {
 			searchText: '',
 			oldSearchText: '',
-			searchType: 1,
+			searchType: 0,
 			searchOptions:[
 				{
 					label: '百度',
-					value:1
+					value:0,
+					url:'https://www.baidu.com/s?wd='
 				},
 				{
 					label: 'Google',
-					value:2
+					value:1,
+					url:'https://www.google.com/search?q='
 				},{
 					label: 'Bing',
-					value:3
+					value:2,
+					url:'https://cn.bing.com/search?q='
+				},{
+					label: 'Npmjs',
+					value:3,
+					url:'https://www.npmjs.com/search?q='
 				}
 			],
 		};
@@ -38,11 +45,7 @@ export default {
 			if(this.oldSearchText !== this.searchText) {
 				return;
 			}
-			switch(this.searchType){
-			case 1: window.open(`https://www.baidu.com/s?wd=${this.searchText}`); break;
-			case 2: window.open(`https://www.google.com/search?q=${this.searchText}`);break;
-			case 3: window.open(`https://cn.bing.com/search?q=${this.searchText}`);break;
-			}
+			window.open(this.searchOptions[this.searchType].url + this.searchText);
 		},
 		modifyValue(){
 			this.oldSearchText = this.searchText;

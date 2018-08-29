@@ -1,9 +1,9 @@
 <template>
 	<div id="body">
 		<el-container>
-			<!-- <el-header>
+			<el-header>
 				<Navigation />
-			</el-header> -->
+			</el-header>
 			<el-main>
 				<el-row>
 					<el-col :span="16" :offset="4">
@@ -22,11 +22,13 @@
 
 <script>
 import Search from '~/components/Search.vue';
+import Navigation from '~/components/Navigation.vue';
 import Item from '~/components/Item.vue';
 export default {
 	components:{
 		Search,
-		Item
+		Item,
+		Navigation
 	},
 	data() {
 		return {

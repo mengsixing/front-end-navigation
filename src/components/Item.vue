@@ -1,9 +1,9 @@
 <template>
 	<div>
 		<el-row>
-			<el-col :span="16" :offset="4" class="common-panel">
+			<el-col :span="24" class="common-panel">
 				<el-row class="common-panel-title">常用网址</el-row>
-				<el-row :gutter="20" class="common-panel-container">
+				<el-row :gutter="10" class="common-panel-container">
 					<el-col :span="4" v-for="item in commonList" v-bind:key="item.name" class="common-panel-item">
 						<a :href="item.url" target="_blank" class="common-panel-item-a">
 							<el-card shadow="always">
@@ -16,9 +16,24 @@
 		</el-row>
 
 		<el-row>
-			<el-col :span="16" :offset="4" class="common-panel">
+			<el-col :span="24" class="common-panel">
+				<el-row class="common-panel-title tool-panel-title">常用工具</el-row>
+				<el-row :gutter="10" class="common-panel-container">
+					<el-col :span="4" v-for="item in toolList" v-bind:key="item.name" class="common-panel-item">
+						<a :href="item.url" target="_blank" class="common-panel-item-a">
+							<el-card shadow="always">
+								{{item.name}}
+							</el-card>
+						</a>
+					</el-col>
+				</el-row>
+			</el-col>
+		</el-row>
+
+		<el-row>
+			<el-col :span="24" class="common-panel">
 				<el-row class="common-panel-title blog-panel-title">经典博客</el-row>
-				<el-row :gutter="20" class="common-panel-container">
+				<el-row :gutter="10" class="common-panel-container">
 					<el-col :span="4" v-for="item in blogList" v-bind:key="item.name" class="common-panel-item">
 						<a :href="item.url" target="_blank" class="common-panel-item-a">
 							<el-card shadow="always">
@@ -31,9 +46,9 @@
 		</el-row>
 
 		<el-row>
-			<el-col :span="16" :offset="4" class="common-panel">
+			<el-col :span="24" class="common-panel">
 				<el-row class="common-panel-title study-panel-title">视频学习</el-row>
-				<el-row :gutter="20" class="common-panel-container">
+				<el-row :gutter="10" class="common-panel-container">
 					<el-col :span="4" v-for="item in studyList" v-bind:key="item.name" class="common-panel-item">
 						<a :href="item.url" target="_blank" class="common-panel-item-a">
 							<el-card shadow="always">
@@ -55,28 +70,38 @@ export default {
 			commonList:[{
 				name:'掘金',
 				url:'https://juejin.im',
-				logo:'https://b-gold-cdn.xitu.io/v3/static/img/logo.a7995ad.svg'
 			},{
 				name:'知乎',
 				url:'https://www.zhihu.com',
-				logo:'https://b-gold-cdn.xitu.io/v3/static/img/logo.a7995ad.svg'
-			},{
-				name:'Segmentfault',
-				url:'https://segmentfault.com',
-				logo:'https://b-gold-cdn.xitu.io/v3/static/img/logo.a7995ad.svg'
 			},{
 				name:'Github',
 				url:'https://www.github.com',
-				logo:'https://b-gold-cdn.xitu.io/v3/static/img/logo.a7995ad.svg'
 			},{
 				name:'CNode',
 				url:'https://cnodejs.org',
-				logo:'https://b-gold-cdn.xitu.io/v3/static/img/logo.a7995ad.svg'
 			},{
 				name:'V2EX',
 				url:'https://www.v2ex.com',
-				logo:'https://b-gold-cdn.xitu.io/v3/static/img/logo.a7995ad.svg'
+			},{
+				name:'Stackoverflow',
+				url:'https://stackoverflow.com/',
+			},{
+				name:'Segmentfault',
+				url:'https://segmentfault.com',
 			}],
+			toolList:[
+				{
+					name:'CodePen',
+					url:'https://codepen.io/',
+				},
+				{
+					name:'谷歌翻译',
+					url:'https://translate.google.cn/',
+				},{
+					name:'Bejson',
+					url:'http://www.bejson.com/'
+				}
+			],
 			blogList:[{
 				name:'阮一峰',
 				url:'http://www.ruanyifeng.com/blog/'
@@ -109,7 +134,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .logo {
   height: 30px;
   vertical-align: middle;
@@ -127,12 +152,16 @@ export default {
     background-color: #409eff;
     color: white;
 
-    &.blog-panel-title {
+    &.tool-panel-title {
       background-color: #67c23a;
     }
 
-    &.study-panel-title {
+    &.blog-panel-title {
       background-color: #e6a23c;
+    }
+
+    &.study-panel-title {
+      background-color: #f56c6c;
     }
   }
 
@@ -154,6 +183,10 @@ export default {
       }
     }
   }
+}
+
+.el-card__body {
+  padding: 10px !important;
 }
 </style>
 

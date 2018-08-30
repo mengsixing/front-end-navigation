@@ -6,13 +6,15 @@
 			</el-header>
 			<el-main>
 				<el-row>
-					<el-col :span="16" :offset="4">
+					<el-col :span="14" :offset="5">
 						<Search />
 					</el-col>
 				</el-row>
 				<div class="white-line"></div>
 				<el-row>
+					<el-col :span="14" :offset="5">
 					<Item />
+					</el-col>
 				</el-row>
 			</el-main>
 			<el-footer height="35px">created by

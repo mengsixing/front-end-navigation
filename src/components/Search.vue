@@ -1,6 +1,6 @@
 <template>
 	<div class="search">
-		<img class="search-image" src="../assets/qianduandaohang.png" width="300" height="175" alt="每日一图">
+		<img class="search-image" src="../assets/qianduandaohang.png" width="320" height="180" alt="每日一图">
 		<el-input placeholder="请输入内容" v-model="searchText" class="input-with-select" @change="modifyValue" @keyup.enter.native="startSearch">
 			<el-select v-model="searchType" slot="prepend" placeholder="请选择">
 				<el-option v-for="item in searchOptions" :label="item.label" :value="item.value" :key="item.label">
@@ -57,11 +57,6 @@ export default {
 <style lang="scss">
 .search {
   text-align: center;
-
-  .search-image {
-    width: 35%;
-    margin-bottom: 40px;
-  }
 }
 </style>
 

@@ -3,8 +3,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 var StyleLintPlugin = require('stylelint-webpack-plugin');
 
+const isProd = process.env.NODE_ENV === 'production';
+
 module.exports = {
-	mode: 'development',
+	mode: isProd ? 'production' : 'development',
 	entry: './src/main.js',
 	devtool: 'cheap-source-map',
 	output: {

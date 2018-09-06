@@ -2,6 +2,8 @@
 
 一个前端导航，可附加到谷歌扩展程序。
 
+[![Build Status](https://travis-ci.com/yhlben/front-end-navigation.svg?branch=master)](https://travis-ci.com/yhlben/front-end-navigation)
+
 ## 使用方式
 
 [Online Demo](https://yhlben.github.io/front-end-navigation/)

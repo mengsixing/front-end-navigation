@@ -7,7 +7,8 @@ config.mode = 'production';
 
 config.plugins.push(
 	new HtmlWebpackPlugin({
-		template: path.resolve(__dirname, 'template/index.html')
+		template: path.resolve(__dirname, 'template/index.html'),
+		favicon:path.resolve(__dirname, 'template/favicon.ico')
 	})
 );
 

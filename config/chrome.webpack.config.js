@@ -11,7 +11,8 @@ config.resolve.alias['vue'] = 'vue/dist/vue.js';
 
 config.plugins.push(
 	new HtmlWebpackPlugin({
-		template: path.resolve(__dirname, 'template/chrome.html')
+		template: path.resolve(__dirname, 'template/chrome.html'),
+		favicon:path.resolve(__dirname, 'template/favicon.ico')
 	})
 );
 

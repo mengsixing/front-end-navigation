@@ -9,7 +9,7 @@ script:
 - npm run build
 deploy:
   provider: pages
-  target-branch: master
+  target-branch: gh-pages
   skip-cleanup: true
   local-dir: chrome-extends/
   repo: yhlben/yhlben.github.io/front-end-navigation
@@ -18,4 +18,4 @@ deploy:
   github-token: $REPO_TOKEN
   keep-history: true
   on:
-    branch: gh-pages
+    branch: master

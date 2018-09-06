@@ -1,7 +1,7 @@
 {
-  "name": "fontend-tab",
+  "name": "fontend-nav",
   "version": "1.0",
-  "description": "我的newtab标签2!",
+  "description": "前端导航",
   "chrome_url_overrides" : {
     "newtab": "index.html"
   },

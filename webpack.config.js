@@ -8,7 +8,7 @@ const isProd = process.env.NODE_ENV === 'production';
 module.exports = {
 	mode: isProd ? 'production' : 'development',
 	entry: './src/main.js',
-	devtool: 'cheap-source-map',
+	devtool: 'none',
 	output: {
 		filename: 'bundle.js',
 		path: path.resolve(__dirname, 'chrome-extends')
@@ -56,9 +56,12 @@ module.exports = {
 			files: ['src/**/*.vue']
 		})
 	],
+	externals: {
+		'vue': 'Vue',
+		'element-ui': 'ELEMENT',
+	},
 	resolve: {
 		alias: {
-			vue: 'vue/dist/vue.js',
 			'~': path.resolve(__dirname, 'src')
 		}
 	}

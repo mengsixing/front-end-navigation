@@ -50,6 +50,26 @@ export var commonList = [
 	{
 		name: 'Segmentfault',
 		url: 'https://segmentfault.com'
+	},
+	{
+		name: '前端里',
+		url: 'http://www.yyyweb.com/'
+	},
+	{
+		name: '阿里云',
+		url: 'https://www.aliyun.com/'
+	},
+	{
+		name: 'Awesomes',
+		url: 'https://www.awesomes.cn/'
+	},
+	{
+		name: '七牛',
+		url: 'https://www.qiniu.com/'
+	},
+	{
+		name: '牛客网',
+		url: 'https://www.nowcoder.com/'
 	}
 ];
 
@@ -66,6 +86,14 @@ export var toolList = [
 	{
 		name: 'Bejson',
 		url: 'http://www.bejson.com/'
+	},
+	{
+		name: 'Can I use',
+		url: 'https://caniuse.com/'
+	},
+	{
+		name: 'BootCDN',
+		url: 'https://www.bootcdn.cn/'
 	}
 ];
 

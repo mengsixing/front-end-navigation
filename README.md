@@ -1,18 +1,18 @@
 # front-end-navigation
 
-Chrome extensions for front-end development.
+一个前端导航，可附加到谷歌扩展程序。
 
-## Usage
+## 使用方式
 
-[Online Demo](http://47.106.100.182/)
+[Online Demo](https://yhlben.github.io/front-end-navigation/)
 
-1、[Chrome extensions](chrome://extensions/)
+1、进入谷歌扩展 [Chrome extensions](chrome://extensions/)
 
 2、打开开发者模式。
 
 3、加载已解压的扩展程序。
 
-## Contribute
+## 贡献网站
 
 1、Fork it.
 

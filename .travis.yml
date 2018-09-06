@@ -8,7 +8,7 @@ deploy:
   provider: pages
   target-branch: gh-pages
   skip-cleanup: true
-  local-dir: chrome-extends/
+  local-dir: dist/
   repo: yhlben/front-end-navigation
   email: robot@travis.com
   name: robot

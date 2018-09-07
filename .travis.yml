@@ -2,8 +2,12 @@ sudo: required
 language: node_js
 node_js:
 - '10'
-script:
-- npm run build
+jobs:
+  include:
+    - stage: lint
+      script: npm run lint
+    - stage: build
+      script: npm run build
 deploy:
   provider: pages
   target-branch: gh-pages

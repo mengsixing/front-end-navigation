@@ -1,6 +1,8 @@
 const path = require('path');
+const webpack = require('webpack');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
-var StyleLintPlugin = require('stylelint-webpack-plugin');
+const StyleLintPlugin = require('stylelint-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const config = {
 	mode: 'development',
@@ -48,9 +50,20 @@ const config = {
 		new StyleLintPlugin({
 			// 正则匹配想要lint监测的文件
 			files: ['src/**/*.vue']
+		}),
+		new HtmlWebpackPlugin({
+			template: path.resolve(__dirname, 'template/index.ejs'),
+			favicon: path.resolve(__dirname, 'template/favicon.ico'),
+			filename: 'index.html',
+			env: process.env.NODE_ENV
+		}),
+		new webpack.DefinePlugin({
+			'process.env': {
+				NODE_ENV: JSON.stringify(process.env.NODE_ENV)
+			}
 		})
 	],
-	resolve:{
+	resolve: {
 		alias: {
 			'~': path.resolve(__dirname, '../src')
 		}

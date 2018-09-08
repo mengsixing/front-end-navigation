@@ -8,9 +8,18 @@ config.devServer = {
 	hot: true
 };
 
-config.plugins.push(
-	new webpack.HotModuleReplacementPlugin()
-);
+config.module.rules = config.module.rules.concat([
+	{
+		test: /\.css$/,
+		use: ['style-loader', 'css-loader']
+	},
+	{
+		test: /\.scss$/,
+		use: ['style-loader', 'css-loader', 'sass-loader']
+	}
+]);
+
+config.plugins.push(new webpack.HotModuleReplacementPlugin());
 
 config.externals = {
 	vue: 'Vue',

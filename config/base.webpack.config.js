@@ -25,10 +25,6 @@ const config = {
 				loader: 'eslint-loader'
 			},
 			{
-				test: /\.css$/,
-				use: ['style-loader', 'css-loader']
-			},
-			{
 				test: /\.(png|jpg|jpeg|gif|eot|ttf|woff|woff2|svg|svgz)(\?.+)?$/,
 				use: [
 					{
@@ -39,10 +35,6 @@ const config = {
 					}
 				]
 			},
-			{
-				test: /\.scss$/,
-				use: ['style-loader', 'css-loader', 'sass-loader']
-			}
 		]
 	},
 	plugins: [

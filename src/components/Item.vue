@@ -17,6 +17,21 @@
 
 		<el-row>
 			<el-col :span="24" class="common-panel">
+				<el-row class="common-panel-title hotTechnology-panel-title">热门技术</el-row>
+				<el-row :gutter="10" class="common-panel-container">
+					<el-col :span="4" v-for="item in hotTechnologyList" v-bind:key="item.name" class="common-panel-item">
+						<a :href="item.url" target="_blank" class="common-panel-item-a">
+							<el-card shadow="always">
+								{{item.name}}
+							</el-card>
+						</a>
+					</el-col>
+				</el-row>
+			</el-col>
+		</el-row>
+
+		<el-row>
+			<el-col :span="24" class="common-panel">
 				<el-row class="common-panel-title tool-panel-title">工具大全</el-row>
 				<el-row :gutter="10" class="common-panel-container">
 					<el-col :span="4" v-for="item in toolList" v-bind:key="item.name" class="common-panel-item">
@@ -64,11 +79,11 @@
 </template>
 
 <script>
-import { commonList,toolList,blogList,studyList} from '~/db/db';
+import { commonList,toolList,blogList,studyList,hotTechnologyList} from '~/db/db';
 export default {
 	data() {
 		return {
-			commonList,toolList,blogList,studyList
+			commonList,toolList,blogList,studyList,hotTechnologyList
 		};
 	},
 };
@@ -92,16 +107,20 @@ export default {
     background-color: #409eff;
     color: white;
 
-    &.tool-panel-title {
+    &.hotTechnology-panel-title {
       background-color: #67c23a;
     }
 
-    &.blog-panel-title {
+    &.tool-panel-title {
       background-color: #e6a23c;
     }
 
-    &.study-panel-title {
+    &.blog-panel-title {
       background-color: #f56c6c;
+    }
+
+    &.study-panel-title {
+      background-color: #909399;
     }
   }
 

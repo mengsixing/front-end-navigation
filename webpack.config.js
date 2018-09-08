@@ -5,6 +5,9 @@ case 'production':
 case 'chrome':
 	module.exports = require('./config/chrome.webpack.config');
 	break;
+case 'analysis':
+	module.exports = require('./config/analysis.webpack.config');
+	break;
 default:
 	module.exports = require('./config/development.webpack.config');
 	break;

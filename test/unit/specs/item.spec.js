@@ -16,6 +16,6 @@ describe('Item.vue', () => {
 	});
 	it('标题是否全部显示。', () => {
 		var titleLength = wrapper.findAll('.common-panel-title').length;
-		expect(titleLength).to.equal(4);
+		expect(titleLength).to.equal(5);
 	});
 });

@@ -56,6 +56,10 @@ export var commonList = [
 		url: 'http://www.yyyweb.com/'
 	},
 	{
+		name:'微信公众平台',
+		url:'https://mp.weixin.qq.com/'
+	},
+	{
 		name: '阿里云',
 		url: 'https://www.aliyun.com/'
 	},
@@ -72,6 +76,31 @@ export var commonList = [
 		url: 'https://www.nowcoder.com/'
 	}
 ];
+
+// 工具大全
+export var hotTechnologyList = [
+	{
+		name: 'React',
+		url: 'https://reactjs.org/'
+	},
+	{
+		name: 'Vue',
+		url: 'https://cn.vuejs.org/'
+	},
+	{
+		name:'Angular',
+		url:'https://angular.io/'
+	},
+	{
+		name: 'Webpack',
+		url: 'https://webpack.js.org/'
+	},
+	{
+		name:'Node',
+		url:'https://nodejs.org/en/'
+	}
+];
+
 
 // 工具大全
 export var toolList = [

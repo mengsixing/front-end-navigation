@@ -20,5 +20,5 @@ jobs:
 				name: robot
 				github-token: $REPO_TOKEN
 				keep-history: true
-				on:
-					branch: master
+on:
+	branch: master

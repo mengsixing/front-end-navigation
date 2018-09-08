@@ -9,15 +9,16 @@ jobs:
     - stage: build
       script: npm run build
 			after_success: npm run coverage
-deploy:
-  provider: pages
-  target-branch: gh-pages
-  skip-cleanup: true
-  local-dir: dist/
-  repo: yhlben/front-end-navigation
-  email: robot@travis.com
-  name: robot
-  github-token: $REPO_TOKEN
-  keep-history: true
-  on:
-    branch: master
+		- stage: deploy
+			deploy:
+				provider: pages
+				target-branch: gh-pages
+				skip-cleanup: true
+				local-dir: dist/
+				repo: yhlben/front-end-navigation
+				email: robot@travis.com
+				name: robot
+				github-token: $REPO_TOKEN
+				keep-history: true
+				on:
+					branch: master

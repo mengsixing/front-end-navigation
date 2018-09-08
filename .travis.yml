@@ -2,23 +2,22 @@ sudo: required
 language: node_js
 node_js:
 - '10'
-jobs:
-  include:
-    - stage: lint
-      script: npm run lint
-    - stage: build
-      script: npm run build
-			after_success: npm run coverage
-		- stage: deploy
-			deploy:
-				provider: pages
-				target-branch: gh-pages
-				skip-cleanup: true
-				local-dir: dist/
-				repo: yhlben/front-end-navigation
-				email: robot@travis.com
-				name: robot
-				github-token: $REPO_TOKEN
-				keep-history: true
-on:
-	branch: master
+script:
+- npm run lint
+- npm run test
+- npm run build
+after_success:
+- npm run coverage
+
+deploy:
+  provider: pages
+  target-branch: gh-pages
+  skip-cleanup: true
+  local-dir: dist/
+  repo: yhlben/front-end-navigation
+  email: robot@travis.com
+  name: robot
+  github-token: $REPO_TOKEN
+  keep-history: true
+  on:
+    branch: master

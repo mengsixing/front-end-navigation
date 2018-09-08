@@ -8,6 +8,7 @@ jobs:
       script: npm run lint
     - stage: build
       script: npm run build
+			after_success: npm run coverage
 deploy:
   provider: pages
   target-branch: gh-pages

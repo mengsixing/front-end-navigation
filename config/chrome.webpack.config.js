@@ -6,6 +6,7 @@ const { smart } = require('webpack-merge');
 module.exports = smart(config, {
 	mode: 'production',
 	output: {
+		filename: 'bundle-[contenthash:8].js',
 		path: path.resolve(__dirname, '../chrome-extends')
 	},
 	module: {
@@ -33,7 +34,7 @@ module.exports = smart(config, {
 	},
 	plugins: [
 		new MiniCssExtractPlugin({
-			filename: '[name]-[contenthash].css',
+			filename: '[name]-[contenthash:8].css',
 			chunkFilename: '[id].css'
 		})
 	],

@@ -1,6 +1,6 @@
 {
   "name": "front-end-navigation",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "Chrome extensions for front-end development",
   "main": "index.js",
   "scripts": {
@@ -58,6 +58,7 @@
     "webpack": "^4.17.1",
     "webpack-bundle-analyzer": "^2.13.1",
     "webpack-cli": "^3.1.0",
-    "webpack-dev-server": "^3.1.6"
+    "webpack-dev-server": "^3.1.6",
+    "webpack-merge": "^4.1.4"
   }
 }

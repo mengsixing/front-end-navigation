@@ -1,41 +1,45 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const config = require('./base.webpack.config');
+const { smart } = require('webpack-merge');
 
-config.mode = 'production';
-
-config.output.path = path.resolve(__dirname, '../chrome-extends');
-
-config.resolve.alias['vue'] = 'vue/dist/vue.js';
-
-config.module.rules = config.module.rules.concat([
-	{
-		test: /\.css$/,
-		use: [
+module.exports = smart(config, {
+	mode: 'production',
+	output: {
+		path: path.resolve(__dirname, '../chrome-extends')
+	},
+	module: {
+		rules: [
 			{
-				loader: MiniCssExtractPlugin.loader
+				test: /\.css$/,
+				use: [
+					{
+						loader: MiniCssExtractPlugin.loader
+					},
+					'css-loader'
+				]
 			},
-			'css-loader'
+			{
+				test: /\.scss$/,
+				use: [
+					{
+						loader: MiniCssExtractPlugin.loader
+					},
+					'css-loader',
+					'sass-loader'
+				]
+			}
 		]
 	},
-	{
-		test: /\.scss$/,
-		use: [
-			{
-				loader: MiniCssExtractPlugin.loader
-			},
-			'css-loader',
-			'sass-loader'
-		]
+	plugins: [
+		new MiniCssExtractPlugin({
+			filename: '[name]-[contenthash].css',
+			chunkFilename: '[id].css'
+		})
+	],
+	resolve: {
+		alias: {
+			vue: 'vue/dist/vue.js'
+		}
 	}
-]);
-
-config.plugins.push(
-	new MiniCssExtractPlugin({
-		filename: '[name]-[contenthash].css',
-		chunkFilename: '[id].css'
-	})
-);
-
-
-module.exports = config;
+});

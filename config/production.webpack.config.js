@@ -1,40 +1,40 @@
 const config = require('./base.webpack.config');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const { smart } = require('webpack-merge');
 
-config.mode = 'production';
-
-config.externals = {
-	vue: 'Vue',
-	'element-ui': 'ELEMENT'
-};
-
-config.module.rules = config.module.rules.concat([
-	{
-		test: /\.css$/,
-		use: [
+module.exports = smart(config, {
+	mode: 'production',
+	module: {
+		rules: [
 			{
-				loader: MiniCssExtractPlugin.loader
+				test: /\.css$/,
+				use: [
+					{
+						loader: MiniCssExtractPlugin.loader
+					},
+					'css-loader'
+				]
 			},
-			'css-loader'
+			{
+				test: /\.scss$/,
+				use: [
+					{
+						loader: MiniCssExtractPlugin.loader
+					},
+					'css-loader',
+					'sass-loader'
+				]
+			}
 		]
 	},
-	{
-		test: /\.scss$/,
-		use: [
-			{
-				loader: MiniCssExtractPlugin.loader
-			},
-			'css-loader',
-			'sass-loader'
-		]
+	plugins: [
+		new MiniCssExtractPlugin({
+			filename: '[name]-[contenthash].css',
+			chunkFilename: '[id].css'
+		})
+	],
+	externals: {
+		vue: 'Vue',
+		'element-ui': 'ELEMENT'
 	}
-]);
-
-config.plugins.push(
-	new MiniCssExtractPlugin({
-		filename: '[name]-[contenthash].css',
-		chunkFilename: '[id].css'
-	})
-);
-
-module.exports = config;
+});

@@ -1,29 +1,16 @@
 const webpack = require('webpack');
+const { smart } = require('webpack-merge');
 
 const config = require('./base.webpack.config');
 
-config.mode = 'development';
-
-config.devServer = {
-	hot: true
-};
-
-config.module.rules = config.module.rules.concat([
-	{
-		test: /\.css$/,
-		use: ['style-loader', 'css-loader']
+module.exports = smart(config, {
+	mode: 'development',
+	devServer: {
+		hot: true
 	},
-	{
-		test: /\.scss$/,
-		use: ['style-loader', 'css-loader', 'sass-loader']
+	plugins: [new webpack.HotModuleReplacementPlugin()],
+	externals: {
+		vue: 'Vue',
+		'element-ui': 'ELEMENT'
 	}
-]);
-
-config.plugins.push(new webpack.HotModuleReplacementPlugin());
-
-config.externals = {
-	vue: 'Vue',
-	'element-ui': 'ELEMENT'
-};
-
-module.exports = config;
+});

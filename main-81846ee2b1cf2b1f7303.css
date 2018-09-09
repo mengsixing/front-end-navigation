@@ -1,0 +1,111 @@
+
+.search {
+  text-align: center;
+}
+.input-with-select .el-select .el-input {
+  width: 140px;
+}
+
+
+.navigation-github[data-v-70d47dcb] {
+  text-align: right;
+}
+.navigation-github .github[data-v-70d47dcb] {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+.navigation-github .github > img[data-v-70d47dcb] {
+      width: 100%;
+      height: 100%;
+}
+
+
+.logo {
+  height: 30px;
+  vertical-align: middle;
+}
+.common-panel {
+  border: 1px solid #e2e2e2;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+.common-panel .common-panel-title {
+    padding-left: 20px;
+    line-height: 40px;
+    background-color: #409eff;
+    color: white;
+}
+.common-panel .common-panel-title.hotTechnology-panel-title {
+      background-color: #67c23a;
+}
+.common-panel .common-panel-title.tool-panel-title {
+      background-color: #e6a23c;
+}
+.common-panel .common-panel-title.blog-panel-title {
+      background-color: #f56c6c;
+}
+.common-panel .common-panel-title.study-panel-title {
+      background-color: #909399;
+}
+.common-panel .common-panel-container {
+    padding: 20px;
+}
+.common-panel .common-panel-container .common-panel-item {
+      margin-bottom: 20px;
+}
+.common-panel .common-panel-container .common-panel-item > a {
+        font-size: 14px;
+        text-decoration: none;
+        text-align: center;
+}
+.common-panel .common-panel-container .common-panel-item > a .el-card:hover {
+          background-color: #409eff;
+          color: white;
+}
+.el-card__body {
+  padding: 10px !important;
+}
+
+
+.el-select .el-input {
+  width: 130px;
+}
+.input-with-select .el-input-group__prepend {
+  background-color: #fff;
+}
+.el-header,
+.el-footer {
+  color: #333;
+  text-align: center;
+  line-height: 50px;
+}
+.el-header.el-footer,
+  .el-footer.el-footer {
+    line-height: 35px;
+    background-color: #f2f2f2;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #666;
+    text-align: right;
+    padding-right: 20px;
+    font-size: 13px;
+}
+.el-header.el-footer > a,
+    .el-footer.el-footer > a {
+      text-decoration: none;
+      color: #666;
+}
+.white-line {
+  height: 12px;
+}
+.el-main {
+  position: absolute;
+  top: 50px;
+  bottom: 35px;
+  width: 100%;
+}
+

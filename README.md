@@ -6,11 +6,13 @@
 
 ## 使用方式
 
-1、[线上访问](https://yhlben.github.io/front-end-navigation/)
+### 线上访问
 
-2、添加到Chrome扩展。
+[线上访问](https://yhlben.github.io/front-end-navigation/)
 
-2.1、 生成chrome扩展。
+### 添加到 Chrome 扩展。
+
+1、 生成 chrome 扩展。
 
 ```sh
 git clone https://github.com/yhlben/front-end-navigation.git
@@ -18,11 +20,11 @@ npm i
 npm run build:chrome
 ```
 
-2.2、 进入谷歌扩展 [Chrome extensions](chrome://extensions/)
+2、 进入谷歌扩展 [Chrome extensions](chrome://extensions/)
 
-2.3、 打开开发者模式。
+3、 打开开发者模式。
 
-2.4、 加载已解压的扩展程序。
+4、 加载已解压的扩展程序。
 
 ## 贡献代码
 

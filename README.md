@@ -6,15 +6,25 @@
 
 ## 使用方式
 
-[Online Demo](https://yhlben.github.io/front-end-navigation/)
+1、[线上访问](https://yhlben.github.io/front-end-navigation/)
 
-1、进入谷歌扩展 [Chrome extensions](chrome://extensions/)
+2、添加到Chrome扩展。
 
-2、打开开发者模式。
+2.1、 生成chrome扩展。
 
-3、加载已解压的扩展程序。
+```sh
+git clone https://github.com/yhlben/front-end-navigation.git
+npm i
+npm run build:chrome
+```
 
-## 贡献网站
+2.2、 进入谷歌扩展 [Chrome extensions](chrome://extensions/)
+
+2.3、 打开开发者模式。
+
+2.4、 加载已解压的扩展程序。
+
+## 贡献代码
 
 1、Fork it.
 

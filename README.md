@@ -33,3 +33,5 @@ npm run build:chrome
 2、修改文件 src/db/db.js.
 
 3、create pull request.
+
+> 如果您有好的想法和建议，欢迎提 issue 或者直接 pull request，谢谢！

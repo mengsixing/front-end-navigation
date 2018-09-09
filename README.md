@@ -8,9 +8,11 @@
 
 ### 线上访问
 
-[线上访问](https://yhlben.github.io/front-end-navigation/)
+直接访问线上地址：[Online](https://yhlben.github.io/front-end-navigation/)
 
 ### 添加到 Chrome 扩展。
+
+添加到 Chrome 扩展后，每打开一个新标签页，就会默认打开导航页面。
 
 1、 生成 chrome 扩展。
 
@@ -27,6 +29,10 @@ npm run build:chrome
 4、 加载已解压的扩展程序。
 
 ## 贡献代码
+
+本项目基于 element 设计，简洁直观，使用纯静态数据进行渲染，速度很快。
+
+您可以自定义导航链接：
 
 1、Fork it.
 

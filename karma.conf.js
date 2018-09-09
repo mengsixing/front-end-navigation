@@ -6,9 +6,11 @@ module.exports = function(config) {
 		frameworks: ['mocha'],
 		files: ['index.js'],
 		preprocessors: {
-			'index.js': ['webpack', 'coverage']
+			// 'index.js': ['webpack', 'coverage']
+			'index.js': ['webpack']
 		},
-		reporters: ['spec', 'coverage'],
+		// reporters: ['spec', 'coverage'],
+		reporters: ['spec'],
 		coverageReporter: {
 			dir: path.join(__dirname, './coverage'),
 			reporters: [{ type: 'lcov', subdir: '.' }, { type: 'text-summary' }]

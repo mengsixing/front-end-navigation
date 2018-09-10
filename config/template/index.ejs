@@ -9,6 +9,15 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>前端导航</title>
 	<link href="https://cdn.bootcss.com/normalize/8.0.0/normalize.min.css" rel="stylesheet">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125478836-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-125478836-1');
+	</script>
 
 	<% if (htmlWebpackPlugin.options.env !== 'chrome') { %>
 		<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">

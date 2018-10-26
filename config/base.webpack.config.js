@@ -6,10 +6,13 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const config = {
 	mode: 'development',
-	entry: './src/main.js',
+	entry: {
+		main: './src/main.js',
+		vender: ['vue']
+	},
 	devtool: 'none',
 	output: {
-		filename: 'bundle-[hash:5].js',
+		filename: '[name]-[hash:8].js',
 		path: path.resolve(__dirname, '../dist')
 	},
 	module: {

@@ -32,7 +32,7 @@ export default {
 	components:{
 		Search,
 		Item,
-		Navigation
+		Navigation,
 	},
 	data() {
 		return {

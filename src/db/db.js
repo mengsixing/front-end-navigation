@@ -36,8 +36,16 @@ export var commonList = [
 		url: 'https://www.github.com'
 	},
 	{
+		name: 'GithubTrending',
+		url: 'https://www.github.com/trending'
+	},
+	{
 		name: 'CNode',
 		url: 'https://cnodejs.org'
+	},
+	{
+		name: 'Twitter',
+		url: 'https://twitter.com/'
 	},
 	{
 		name: 'V2EX',
@@ -52,12 +60,8 @@ export var commonList = [
 		url: 'https://segmentfault.com'
 	},
 	{
-		name: '前端里',
-		url: 'http://www.yyyweb.com/'
-	},
-	{
-		name:'微信公众平台',
-		url:'https://mp.weixin.qq.com/'
+		name: '微信公众平台',
+		url: 'https://mp.weixin.qq.com/'
 	},
 	{
 		name: '阿里云',
@@ -88,19 +92,18 @@ export var hotTechnologyList = [
 		url: 'https://cn.vuejs.org/'
 	},
 	{
-		name:'Angular',
-		url:'https://angular.io/'
+		name: 'Angular',
+		url: 'https://angular.io/'
 	},
 	{
 		name: 'Webpack',
 		url: 'https://webpack.js.org/'
 	},
 	{
-		name:'Node',
-		url:'https://nodejs.org/en/'
+		name: 'Node',
+		url: 'https://nodejs.org/en/'
 	}
 ];
-
 
 // 工具大全
 export var toolList = [

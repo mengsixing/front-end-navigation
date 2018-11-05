@@ -7,8 +7,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const config = {
 	mode: 'development',
 	entry: {
-		main: './src/main.js',
-		vender: ['vue']
+		main: './src/main.js'
 	},
 	devtool: 'none',
 	output: {

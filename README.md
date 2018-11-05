@@ -40,4 +40,16 @@ npm run build:chrome
 
 3、create pull request.
 
+## 项目架构
+
+1、前端使用 vue 配合 element 框架编写业务代码。
+
+2、webpack 配置，包括 vue-loader，url-loader，html-webpack-plugin，webpack 热更新等。
+
+3、代码质量监测，包括 eslint，stylelint，editorconfig 等配置。
+
+4、测试流程，使用 karma，mocha，@vue/test-utils，对 vue 项目进行单元测试。
+
+5、持续集成，使用 travisCI，进行自动测试，自动发布到 github pages。
+
 > 如果您有好的想法和建议，欢迎提 issue 或者直接 pull request，谢谢！

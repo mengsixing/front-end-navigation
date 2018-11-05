@@ -5,7 +5,7 @@ const { smart } = require('webpack-merge');
 module.exports = smart(config, {
 	mode: 'production',
 	output: {
-		filename: 'bundle-[contenthash:8].js'
+		filename: '[name]-[contenthash:8].js'
 	},
 	module: {
 		rules: [
@@ -39,5 +39,11 @@ module.exports = smart(config, {
 	externals: {
 		vue: 'Vue',
 		'element-ui': 'ELEMENT'
+	},
+	optimization: {
+		// 提出webpack运行时代码
+		runtimeChunk: {
+			name: 'runtime'
+		}
 	}
 });

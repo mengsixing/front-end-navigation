@@ -40,6 +40,10 @@ export var commonList = [
 		url: 'https://www.github.com/trending'
 	},
 	{
+		name: 'leetcode中文',
+		url: 'https://leetcode-cn.com/'
+	},
+	{
 		name: 'CNode',
 		url: 'https://cnodejs.org'
 	},

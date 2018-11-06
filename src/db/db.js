@@ -79,13 +79,9 @@ export var commonList = [
 		name: '七牛',
 		url: 'https://www.qiniu.com/'
 	},
-	{
-		name: '牛客网',
-		url: 'https://www.nowcoder.com/'
-	}
 ];
 
-// 工具大全
+// 热门技术
 export var hotTechnologyList = [
 	{
 		name: 'React',
@@ -116,12 +112,12 @@ export var toolList = [
 		url: 'https://codepen.io/'
 	},
 	{
-		name: '谷歌翻译',
-		url: 'https://translate.google.cn/'
+		name: '百度翻译',
+		url: 'https://fanyi.baidu.com/'
 	},
 	{
-		name: 'Bejson',
-		url: 'http://www.bejson.com/'
+		name: 'FEHelper',
+		url: 'https://www.baidufe.com/fehelper'
 	},
 	{
 		name: 'Can I use',
@@ -149,7 +145,7 @@ export var blogList = [
 	}
 ];
 
-// 视频学习
+// 学习中心
 export var studyList = [
 	{
 		name: '腾讯课堂',
@@ -170,5 +166,9 @@ export var studyList = [
 	{
 		name: 'w3cschool',
 		url: 'https://www.w3cschool.cn/'
+	},
+	{
+		name: '牛客网',
+		url: 'https://www.nowcoder.com/'
 	}
 ];

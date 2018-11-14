@@ -102,6 +102,9 @@ export var hotTechnologyList = [
 	{
 		name: 'Node',
 		url: 'https://nodejs.org/en/'
+	},{
+		name: 'Docker',
+		url: 'https://docs.docker-cn.com/'
 	}
 ];
 

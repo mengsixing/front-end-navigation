@@ -8,7 +8,7 @@
 		"dev": "cross-env NODE_ENV=development webpack-dev-server --open",
 		"analysis": "cross-env NODE_ENV=analysis webpack --progress",
 		"build": "rimraf ./dist && cross-env NODE_ENV=production webpack --progress",
-		"build:chrome": "cross-env NODE_ENV=chrome webpack --progress",
+		"build:chrome": "rimraf ./chrome-extends/* && cp ./google-extends-manifest.json ./chrome-extends/manifest.json && cross-env NODE_ENV=chrome webpack --progress",
 		"test": "cross-env NODE_ENV=chrome karma start"
 	},
 	"repository": {

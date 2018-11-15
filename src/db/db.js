@@ -1,13 +1,13 @@
 export var searchOptions = [
 	{
-		label: '百度',
-		value: 0,
-		url: 'https://www.baidu.com/s?wd='
-	},
-	{
 		label: 'Google',
 		value: 1,
 		url: 'https://www.google.com/search?q='
+	},
+	{
+		label: '百度',
+		value: 0,
+		url: 'https://www.baidu.com/s?wd='
 	},
 	{
 		label: 'Bing',
@@ -79,6 +79,11 @@ export var commonList = [
 		name: '七牛',
 		url: 'https://www.qiniu.com/'
 	},
+	{
+		name: '众成翻译',
+		url: 'https://www.zcfy.cc/'
+	},
+
 ];
 
 // 热门技术
@@ -86,6 +91,10 @@ export var hotTechnologyList = [
 	{
 		name: 'React',
 		url: 'https://reactjs.org/'
+	},
+	{
+		name:'React生命周期',
+		url:'http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/'
 	},
 	{
 		name: 'Vue',
@@ -129,7 +138,32 @@ export var toolList = [
 	{
 		name: 'BootCDN',
 		url: 'https://www.bootcdn.cn/'
-	}
+	},
+	{
+		name: '网站性能检测',
+		url: 'https://web.dev/'
+	},
+	{
+		name: '图标下载',
+		url: 'https://www.easyicon.net/'
+	},
+	{
+		name:'搭梯子Vultr',
+		url:'https://www.vultr.com/'
+	},
+	{
+		name:'useragentstring',
+		url:'http://useragentstring.com/'
+	},
+	{
+		name:'神箭手',
+		url:'https://www.shenjian.io/'
+	},
+	{
+		name:'印记中国',
+		url:'https://www.docschina.org/'
+	},
+
 ];
 
 // 经典博客
@@ -157,18 +191,6 @@ export var studyList = [
 	{
 		name: '慕课网',
 		url: 'https://www.imooc.com/'
-	},
-	{
-		name: '极客学院',
-		url: 'http://www.jikexueyuan.com/'
-	},
-	{
-		name: '网易云课堂',
-		url: 'https://study.163.com/'
-	},
-	{
-		name: 'w3cschool',
-		url: 'https://www.w3cschool.cn/'
 	},
 	{
 		name: '牛客网',

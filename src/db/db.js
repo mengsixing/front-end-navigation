@@ -1,12 +1,12 @@
 export var searchOptions = [
 	{
 		label: 'Google',
-		value: 1,
+		value: 0,
 		url: 'https://www.google.com/search?q='
 	},
 	{
 		label: '百度',
-		value: 0,
+		value: 1,
 		url: 'https://www.baidu.com/s?wd='
 	},
 	{

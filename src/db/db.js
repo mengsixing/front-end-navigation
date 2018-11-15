@@ -83,7 +83,10 @@ export var commonList = [
 		name: '众成翻译',
 		url: 'https://www.zcfy.cc/'
 	},
-
+	{
+		name: 'ES5 中文规范',
+		url: 'https://yanhaijing.com/es5'
+	},
 ];
 
 // 热门技术
@@ -148,7 +151,7 @@ export var toolList = [
 		url: 'https://www.easyicon.net/'
 	},
 	{
-		name:'搭梯子Vultr',
+		name:'Vultr',
 		url:'https://www.vultr.com/'
 	},
 	{

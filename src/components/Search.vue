@@ -1,6 +1,5 @@
 <template>
 	<div class="search">
-		<img class="search-image" src="../assets/qianduandaohang.png" width="320" height="180" alt="每日一图">
 		<el-input placeholder="请输入内容" v-model="searchText" @change="modifyValue" class="input-with-select" @keyup.enter.native="startSearch">
 			<el-select v-model="searchType" slot="prepend" placeholder="请选择">
 				<el-option v-for="item in searchOptions" :label="item.label" :value="item.value" :key="item.label">
@@ -12,7 +11,7 @@
 </template>
 
 <script>
-import {searchOptions} from '~/db/db';
+import { searchOptions } from '~/db/db';
 export default {
 	data() {
 		return {
@@ -23,13 +22,13 @@ export default {
 		};
 	},
 	methods: {
-		startSearch(){
-			if(this.oldSearchText !== this.searchText) {
+		startSearch() {
+			if (this.oldSearchText !== this.searchText) {
 				return;
 			}
 			window.open(this.searchOptions[this.searchType].url + this.searchText);
 		},
-		modifyValue(){
+		modifyValue() {
 			this.oldSearchText = this.searchText;
 		}
 	}

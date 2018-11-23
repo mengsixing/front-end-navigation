@@ -6,14 +6,17 @@
 			</el-header>
 			<el-main>
 				<el-row>
-					<el-col :span="16" :offset="4">
+					<el-col :lg="{span: 16, offset: 4}" :md="{span: 18, offset: 3}" :sm="{span: 20, offset: 2}" :xs="{span: 20,offset:2}">
+						<Banner />
+					</el-col>
+					<el-col :lg="{span: 16, offset: 4}" :md="{span: 18, offset: 3}" :sm="{span: 20, offset: 2}" :xs="{span: 0}">
 						<Search />
 					</el-col>
 				</el-row>
 				<div class="white-line"></div>
 				<el-row>
-					<el-col :span="16" :offset="4">
-						<Item />
+					<el-col :lg="{span: 16, offset: 4}" :md="{span: 18, offset: 3}" :sm="{span: 20, offset: 2}" :xs="{span: 22, offset: 1}">
+						<MainContainer />
 					</el-col>
 				</el-row>
 			</el-main>
@@ -26,12 +29,14 @@
 
 <script>
 import Search from '~/components/Search.vue';
+import Banner from '~/components/Banner.vue';
 import Navigation from '~/components/Navigation.vue';
-import Item from '~/components/Item.vue';
+import MainContainer from '~/components/Main.vue';
 export default {
 	components:{
 		Search,
-		Item,
+		Banner,
+		MainContainer,
 		Navigation,
 	},
 	data() {

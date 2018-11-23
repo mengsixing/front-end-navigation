@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<el-row>
-			<el-col class="navigation-github" :span="1" :offset="23">
+			<el-col class="navigation-github" :span="1" :offset="23" :xs="{span:1,offset:22}">
 				<a class="github" href="https://github.com/yhlben/front-end-navigation" target="_blank">
 					<img src="../assets/github.png" alt="github" />
 				</a>

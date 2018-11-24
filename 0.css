@@ -7,24 +7,71 @@
 }
 
 
-.navigation-github[data-v-70d47dcb] {
+.banner {
+  text-align: center;
+}
+.banner .banner-image {
+    width: 100%;
+    height: auto;
+    max-width: 320px;
+    max-height: 180px;
+}
+
+
+.navigation-github[data-v-2a7ab997] {
   text-align: right;
 }
-.navigation-github .github[data-v-70d47dcb] {
+.navigation-github .github[data-v-2a7ab997] {
     display: inline-block;
     width: 30px;
     height: 30px;
     vertical-align: middle;
 }
-.navigation-github .github > img[data-v-70d47dcb] {
+.navigation-github .github > img[data-v-2a7ab997] {
       width: 100%;
       height: 100%;
 }
 
 
-.logo {
-  height: 30px;
-  vertical-align: middle;
+.commonList {
+  background-color: #409eff;
+  color: white;
+}
+.hotTechnologyList {
+  background-color: #67c23a;
+  color: white;
+}
+.toolList {
+  background-color: #e6a23c;
+  color: white;
+}
+.blogList {
+  background-color: #f56c6c;
+  color: white;
+}
+.studyList {
+  background-color: #909399;
+  color: white;
+}
+.commonList-hover:hover {
+  background-color: #409eff;
+  color: white;
+}
+.hotTechnologyList-hover:hover {
+  background-color: #67c23a;
+  color: white;
+}
+.toolList-hover:hover {
+  background-color: #e6a23c;
+  color: white;
+}
+.blogList-hover:hover {
+  background-color: #f56c6c;
+  color: white;
+}
+.studyList-hover:hover {
+  background-color: #909399;
+  color: white;
 }
 .common-panel {
   border: 1px solid #e2e2e2;
@@ -35,20 +82,6 @@
 .common-panel .common-panel-title {
     padding-left: 20px;
     line-height: 40px;
-    background-color: #409eff;
-    color: white;
-}
-.common-panel .common-panel-title.hotTechnology-panel-title {
-      background-color: #67c23a;
-}
-.common-panel .common-panel-title.tool-panel-title {
-      background-color: #e6a23c;
-}
-.common-panel .common-panel-title.blog-panel-title {
-      background-color: #f56c6c;
-}
-.common-panel .common-panel-title.study-panel-title {
-      background-color: #909399;
 }
 .common-panel .common-panel-container {
     padding: 20px;
@@ -61,12 +94,8 @@
         text-decoration: none;
         text-align: center;
 }
-.common-panel .common-panel-container .common-panel-item > a .el-card:hover {
-          background-color: #409eff;
-          color: white;
-}
 .el-card__body {
-  padding: 10px !important;
+  padding: 15px 10px !important;
 }
 
 

@@ -8,6 +8,10 @@ script:
 - npm run test
 - npm run build
 
+after_script:
+ - npm run coverage
+
+
 deploy:
   provider: pages
   target-branch: gh-pages

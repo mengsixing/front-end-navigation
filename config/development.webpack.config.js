@@ -5,6 +5,9 @@ const config = require('./base.webpack.config');
 
 module.exports = smart(config, {
 	mode: 'development',
+	entry: {
+		main: './src/main.js'
+	},
 	devServer: {
 		hot: true
 	},

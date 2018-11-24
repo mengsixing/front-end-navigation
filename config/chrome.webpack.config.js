@@ -5,6 +5,9 @@ const { smart } = require('webpack-merge');
 
 module.exports = smart(config, {
 	mode: 'production',
+	entry: {
+		main: './src/main.js'
+	},
 	output: {
 		filename: '[name]-[contenthash:8].js',
 		path: path.resolve(__dirname, '../chrome-extends')

@@ -6,9 +6,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const config = {
 	mode: 'development',
-	entry: {
-		main: './src/main.js'
-	},
 	devtool: 'none',
 	output: {
 		filename: '[name]-[hash:8].js',
@@ -37,6 +34,10 @@ const config = {
 						}
 					}
 				]
+			},
+			{
+				test: /\.js$/,
+				loader: ['babel-loader']
 			},
 			{
 				test: /\.css$/,

@@ -9,7 +9,7 @@ describe('Banner.vue', () => {
 		expect(Banner).to.exist;
 	});
 
-	it('存在banner图片', () => {
+	it('存在banner图片。', () => {
 		expect(wrapper.find('.banner-image').exists());
 	});
 

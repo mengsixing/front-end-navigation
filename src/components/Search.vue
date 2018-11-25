@@ -1,6 +1,6 @@
 <template>
-	<div class="search">
-		<el-input placeholder="请输入内容" v-model="searchText" @change="modifyValue" class="input-with-select" @keyup.enter.native="startSearch">
+	<div class="search" @keyup.enter="startSearch">
+		<el-input placeholder="请输入内容" v-model="searchText" @change="modifyValue" class="input-with-select">
 			<el-select v-model="searchType" slot="prepend" placeholder="请选择">
 				<el-option v-for="item in searchOptions" :label="item.label" :value="item.value" :key="item.label">
 				</el-option>
@@ -24,9 +24,10 @@ export default {
 	methods: {
 		startSearch() {
 			if (this.oldSearchText !== this.searchText) {
-				return;
+				return false;
 			}
 			window.open(this.searchOptions[this.searchType].url + this.searchText);
+			return true;
 		},
 		modifyValue() {
 			this.oldSearchText = this.searchText;

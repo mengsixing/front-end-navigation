@@ -1,4 +1,4 @@
-export var searchOptions = [
+export const searchOptions = [
 	{
 		label: 'Google',
 		value: 0,
@@ -22,7 +22,7 @@ export var searchOptions = [
 ];
 
 // 常用网址
-export var commonList = {
+export const commonList = {
 	title: '常用网址',
 	list: [
 		{
@@ -42,7 +42,7 @@ export var commonList = {
 			url: 'https://www.github.com/trending'
 		},
 		{
-			name: 'leetcode中文',
+			name: 'Leetcode中文',
 			url: 'https://leetcode-cn.com/'
 		},
 		{
@@ -93,7 +93,7 @@ export var commonList = {
 };
 
 // 热门技术
-export var hotTechnologyList = {
+export const hotTechnologyList = {
 	title: '热门技术',
 	list: [
 		{
@@ -128,7 +128,7 @@ export var hotTechnologyList = {
 };
 
 // 工具大全
-export var toolList = {
+export const toolList = {
 	title: '工具大全',
 	list: [
 		{
@@ -182,17 +182,26 @@ export var toolList = {
 		{
 			name: '流程图制作',
 			url: 'https://www.processon.com/'
+		},
+		{
+			name: '移动端调试',
+			url: 'https://github.com/wuchangming/spy-debugger'
 		}
+
 	]
 };
 
 // 经典博客
-export var blogList = {
+export const blogList = {
 	title: '经典博客',
 	list: [
 		{
 			name: '阮一峰',
 			url: 'http://www.ruanyifeng.com/blog/'
+		},
+		{
+			name:'冴羽',
+			url:'https://github.com/mqyqingfeng/Blog'
 		},
 		{
 			name: '张鑫旭',
@@ -206,7 +215,7 @@ export var blogList = {
 };
 
 // 学习中心
-export var studyList = {
+export const studyList = {
 	title: '学习中心',
 	list: [
 		{

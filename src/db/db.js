@@ -86,6 +86,10 @@ export const commonList = {
 			url: 'https://www.zcfy.cc/'
 		},
 		{
+			name: '豆瓣读书',
+			url: 'https://book.douban.com/'
+		},
+		{
 			name: 'ES5 规范',
 			url: 'http://es5.github.io/'
 		}

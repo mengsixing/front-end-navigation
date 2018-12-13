@@ -69,17 +69,10 @@ export const commonList = {
 			name: '微信公众平台',
 			url: 'https://mp.weixin.qq.com/'
 		},
-		{
-			name: '阿里云',
-			url: 'https://www.aliyun.com/'
-		},
+
 		{
 			name: 'Awesomes',
 			url: 'https://www.awesomes.cn/'
-		},
-		{
-			name: '七牛',
-			url: 'https://www.qiniu.com/'
 		},
 		{
 			name: '众成翻译',
@@ -136,6 +129,14 @@ export const toolList = {
 	title: '工具大全',
 	list: [
 		{
+			name: '阿里云',
+			url: 'https://www.aliyun.com/'
+		},
+		{
+			name: '七牛云',
+			url: 'https://www.qiniu.com/'
+		},
+		{
 			name: 'CodePen',
 			url: 'https://codepen.io/'
 		},
@@ -190,8 +191,19 @@ export const toolList = {
 		{
 			name: '移动端调试',
 			url: 'https://github.com/wuchangming/spy-debugger'
+		},
+		{
+			name: 'mock数据',
+			url: 'https://www.easy-mock.com/'
+		},
+		{
+			name: '文件内容比较',
+			url: 'https://www.scootersoftware.com'
+		},
+		{
+			name:'Netlify',
+			url:'https://www.netlify.com/'
 		}
-
 	]
 };
 
@@ -204,8 +216,8 @@ export const blogList = {
 			url: 'http://www.ruanyifeng.com/blog/'
 		},
 		{
-			name:'冴羽',
-			url:'https://github.com/mqyqingfeng/Blog'
+			name: '冴羽',
+			url: 'https://github.com/mqyqingfeng/Blog'
 		},
 		{
 			name: '张鑫旭',

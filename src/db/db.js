@@ -203,6 +203,10 @@ export const toolList = {
 		{
 			name:'Netlify',
 			url:'https://www.netlify.com/'
+		},
+		{
+			name:'坚果云',
+			url:'https://www.jianguoyun.com'
 		}
 	]
 };

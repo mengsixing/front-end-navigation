@@ -2,7 +2,8 @@
 
 [![Build Status](https://travis-ci.com/yhlben/front-end-navigation.svg?branch=master)](https://travis-ci.com/yhlben/front-end-navigation)
 [![Build status](https://ci.appveyor.com/api/projects/status/jxfwfppagyy4hmi7/branch/master?svg=true)](https://ci.appveyor.com/project/yhlben/front-end-navigation/branch/master)
-[![Coverage Status](https://coveralls.io/repos/github/yhlben/front-end-navigation/badge.svg)](https://coveralls.io/github/yhlben/front-end-navigation)
+[![Coverage Status](https://coveralls.io/repos/github/yhlben/front-end-navigation/badge.svg)](https://coveralls.io/github/yhlben/front-end-navigation) [![Greenkeeper badge](https://badges.greenkeeper.io/yhlben/front-end-navigation.svg)](https://greenkeeper.io/)
+[![David](https://img.shields.io/david/yhlben/front-end-navigation.svg)](https://david-dm.org/yhlben/front-end-navigation)
 
 > 一个前端导航，可附加到谷歌扩展程序。
 

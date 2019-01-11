@@ -169,7 +169,7 @@ export const toolList = {
 			url: 'https://www.vultr.com/'
 		},
 		{
-			name: 'useragentstring',
+			name: 'UserAgentString',
 			url: 'http://useragentstring.com/'
 		},
 		{
@@ -193,7 +193,7 @@ export const toolList = {
 			url: 'https://github.com/wuchangming/spy-debugger'
 		},
 		{
-			name: 'mock数据',
+			name: 'Mock数据',
 			url: 'https://www.easy-mock.com/'
 		},
 		{
@@ -201,12 +201,16 @@ export const toolList = {
 			url: 'https://www.scootersoftware.com'
 		},
 		{
-			name:'Netlify',
-			url:'https://www.netlify.com/'
+			name: 'Netlify',
+			url: 'https://www.netlify.com/'
 		},
 		{
-			name:'坚果云',
-			url:'https://www.jianguoyun.com'
+			name: '坚果云',
+			url: 'https://www.jianguoyun.com'
+		},
+		{
+			name: 'NPM包大小检查',
+			url: 'https://bundlephobia.com/'
 		}
 	]
 };

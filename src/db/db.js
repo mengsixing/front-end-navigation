@@ -137,6 +137,10 @@ export const toolList = {
 			url: 'https://www.qiniu.com/'
 		},
 		{
+			name: '坚果云',
+			url: 'https://www.jianguoyun.com'
+		},
+		{
 			name: 'CodePen',
 			url: 'https://codepen.io/'
 		},
@@ -201,12 +205,8 @@ export const toolList = {
 			url: 'https://www.scootersoftware.com'
 		},
 		{
-			name: 'Netlify',
+			name: '静态网页Netlify',
 			url: 'https://www.netlify.com/'
-		},
-		{
-			name: '坚果云',
-			url: 'https://www.jianguoyun.com'
 		},
 		{
 			name: 'NPM包大小检查',
@@ -249,6 +249,10 @@ export const studyList = {
 		{
 			name: '慕课网',
 			url: 'https://www.imooc.com/'
+		},
+		{
+			name: '极客时间',
+			url: 'https://www.geekbang.org/'
 		},
 		{
 			name: '牛客网',

@@ -177,7 +177,7 @@ export const toolList = {
 			url: 'http://useragentstring.com/'
 		},
 		{
-			name: '神箭手',
+			name: '爬虫商城',
 			url: 'https://www.shenjian.io/'
 		},
 		{
@@ -211,6 +211,10 @@ export const toolList = {
 		{
 			name: 'NPM包大小检查',
 			url: 'https://bundlephobia.com/'
+		},
+		{
+			name:'变量命名',
+			url:'https://unbug.github.io/codelf'
 		}
 	]
 };

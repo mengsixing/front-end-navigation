@@ -52,6 +52,7 @@ export default {
   position: fixed;
   bottom: 80px;
   right: 80px;
+  visibility: hidden;
   display: flex;
   justify-content: center;
   align-items: center;

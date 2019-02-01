@@ -1,7 +1,11 @@
 <template>
-	<div class="banner">
-		<img class="banner-image" src="../assets/qianduandaohang.png" alt="banner">
-	</div>
+  <div class="banner">
+    <img
+      class="banner-image"
+      src="../assets/qianduandaohang.png"
+      alt="banner"
+    >
+  </div>
 </template>
 
 <style lang="scss">
@@ -16,5 +20,3 @@
   }
 }
 </style>
-
-

@@ -1,33 +1,57 @@
 <template>
-	<div>
-		<el-row>
-			<el-col :span="24" class="common-panel">
-				<el-row class="common-panel-title" :class="titleStyle">{{data.title}}</el-row>
-				<el-row :gutter="10" class="common-panel-container">
-					<el-col :xs="24" :sm="12" :md="8" :lg="6" v-for="item in data.list" v-bind:key="item.name" class="common-panel-item">
-						<a :href="item.url" target="_blank" class="common-panel-item-a">
-							<el-card shadow="always" :class="itemHoverStyle">
-								{{item.name}}
-							</el-card>
-						</a>
-					</el-col>
-				</el-row>
-			</el-col>
-		</el-row>
-	</div>
+  <div>
+    <el-row>
+      <el-col
+        :span="24"
+        class="common-panel"
+      >
+        <el-row
+          class="common-panel-title"
+          :class="titleStyle"
+        >{{data.title}}</el-row>
+        <el-row
+          :gutter="10"
+          class="common-panel-container"
+        >
+          <el-col
+            :xs="24"
+            :sm="12"
+            :md="8"
+            :lg="6"
+            v-for="item in data.list"
+            v-bind:key="item.name"
+            class="common-panel-item"
+          >
+            <a
+              :href="item.url"
+              target="_blank"
+              class="common-panel-item-a"
+            >
+              <el-card
+                shadow="always"
+                :class="itemHoverStyle"
+              >
+                {{item.name}}
+              </el-card>
+            </a>
+          </el-col>
+        </el-row>
+      </el-col>
+    </el-row>
+  </div>
 </template>
 
 <script>
 export default {
-	props: ['data', 'type'],
-	computed: {
-		titleStyle() {
-			return this.type;
-		},
-		itemHoverStyle() {
-			return this.type + '-hover';
-		}
-	},
+  props: ['data', 'type'],
+  computed: {
+    titleStyle() {
+      return this.type;
+    },
+    itemHoverStyle() {
+      return `${this.type}-hover`;
+    },
+  },
 };
 </script>
 
@@ -107,5 +131,3 @@ export default {
   padding: 15px 10px !important;
 }
 </style>
-
-

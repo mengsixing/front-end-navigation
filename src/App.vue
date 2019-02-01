@@ -42,7 +42,10 @@
         >@yhlben</a>
       </el-footer>
     </el-container>
-		<scroll-to-top v-if="scrollElement" :scrollElement="scrollElement" />
+    <scroll-to-top
+      v-if="scrollElement"
+      :scrollElement="scrollElement"
+    />
   </div>
 </template>
 
@@ -52,24 +55,25 @@ import Banner from '~/components/Banner.vue';
 import Navigation from '~/components/Navigation.vue';
 import MainContainer from '~/components/Main.vue';
 import ScrollToTop from '~/components/ScrollToTop.vue';
+
 export default {
-	components: {
-		Search,
-		Banner,
-		MainContainer,
-		ScrollToTop,
-		Navigation
-	},
-	data() {
-		return {
-			search: '',
-			select: '',
-			scrollElement:''
-		};
-	},
-	mounted(){
-		this.scrollElement = this.$refs.xxx.$el;
-	}
+  components: {
+    Search,
+    Banner,
+    MainContainer,
+    ScrollToTop,
+    Navigation,
+  },
+  data() {
+    return {
+      search: '',
+      select: '',
+      scrollElement: '',
+    };
+  },
+  mounted() {
+    this.scrollElement = this.$refs.xxx.$el;
+  },
 };
 </script>
 

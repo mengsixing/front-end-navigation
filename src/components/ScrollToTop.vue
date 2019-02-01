@@ -1,42 +1,49 @@
 <template>
   <div>
-		<button  id="scroll-to-top" class="gotoTop"  @click="gotoTop()">
-		<i class="el-icon-caret-top"></i>
-		</button>
+    <section
+      id="scroll-to-top"
+      class="gotoTop"
+      @click="gotoTop()"
+    >
+      <i class="el-icon-caret-top"></i>
+    </section>
   </div>
 </template>
 
 <script>
 export default {
-	props:['scrollElement'],
-	mounted() {
-		this.scrollElement.addEventListener('scroll', this.scrollToTop);
-	},
-	methods: {
-		scrollToTop() {
-			let topBtn = document.getElementById('scroll-to-top');
-			let scrollTop = this.scrollElement.pageYOffset || this.scrollElement.scrollTop || this.scrollElement.scrollTop;
-			let browserHeight = this.scrollElement.offsetHeight - 80;
-			if (scrollTop > browserHeight) {
-				topBtn.style.display = 'block';
-			} else {
-				topBtn.style.display = 'none';
-			}
-		},
-		gotoTop() {
-			window.timer=setInterval(()=>{
-				var scrollTop=this.scrollElement.scrollTop;
-				var ispeed=Math.floor(-scrollTop/2);
-				if(scrollTop==0){
-					clearInterval(window.timer);
-				}
-				this.scrollElement.scrollTop = scrollTop+ispeed;
-			},30);
-		}
-	},
-	beforeDestroy () {
-		this.scrollElement.removeEventListener('scroll', this.scrollToTop);
-	}
+  props: ['scrollElement'],
+  data() {
+    return {
+      timer: '',
+      scrolling: false,
+    };
+  },
+  mounted() {
+    // 平滑滚动
+    this.scrollElement.style['scroll-behavior'] = 'smooth';
+    this.scrollElement.addEventListener('scroll', this.scrollToTop);
+  },
+  methods: {
+    scrollToTop() {
+      const topBtn = document.getElementById('scroll-to-top');
+      const scrollTop = this.scrollElement.pageYOffset
+        || this.scrollElement.scrollTop
+        || this.scrollElement.scrollTop;
+      const browserHeight = this.scrollElement.offsetHeight - 80;
+      if (scrollTop > browserHeight) {
+        topBtn.style.visibility = 'visible';
+      } else {
+        topBtn.style.visibility = 'hidden';
+      }
+    },
+    gotoTop() {
+      this.scrollElement.scrollTop = 0;
+    },
+  },
+  beforeDestroy() {
+    this.scrollElement.removeEventListener('scroll', this.scrollToTop);
+  },
 };
 </script>
 
@@ -45,7 +52,9 @@ export default {
   position: fixed;
   bottom: 80px;
   right: 80px;
-  display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 32px;
   background-color: #409eff;
   color: white;

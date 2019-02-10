@@ -6,6 +6,7 @@ const wrapper = mount(Main);
 
 describe('Main.vue', () => {
   it('存在Main组件。', () => {
+    // eslint-disable-next-line no-unused-expressions
     expect(Main).to.exist;
   });
   it('属性是否正确。', () => {

@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import { shallowMount } from '@vue/test-utils';
 import Search from '~/components/Search.vue';
-
+/* eslint-disable no-unused-expressions */
 const wrapper = shallowMount(Search);
 
 const input = wrapper.find('.input-with-select');

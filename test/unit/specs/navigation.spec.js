@@ -6,6 +6,7 @@ const wrapper = mount(Navigation);
 
 describe('Navigation.vue', () => {
   it('存在Navigation组件。', () => {
+    // eslint-disable-next-line no-unused-expressions
     expect(Navigation).to.exist;
   });
 

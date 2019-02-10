@@ -6,6 +6,7 @@ const wrapper = shallowMount(Banner);
 
 describe('Banner.vue', () => {
   it('存在Banner组件。', () => {
+    // eslint-disable-next-line no-unused-expressions
     expect(Banner).to.exist;
   });
 

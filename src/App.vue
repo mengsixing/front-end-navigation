@@ -4,7 +4,7 @@
       <el-header>
         <Navigation />
       </el-header>
-      <el-main ref="xxx">
+      <el-main ref="main">
         <el-row>
           <el-col
             :lg="{span: 16, offset: 4}"
@@ -72,7 +72,7 @@ export default {
     };
   },
   mounted() {
-    this.scrollElement = this.$refs.xxx.$el;
+    this.scrollElement = this.$refs.main.$el;
   },
 };
 </script>

@@ -4,6 +4,7 @@
       id="scroll-to-top"
       class="gotoTop"
       @click="gotoTop()"
+      ref="topBtn"
     >
       <i class="el-icon-caret-top"></i>
     </section>
@@ -26,7 +27,7 @@ export default {
   },
   methods: {
     scrollToTop() {
-      const topBtn = document.getElementById('scroll-to-top');
+      const { topBtn } = this.$refs;
       const scrollTop = this.scrollElement.pageYOffset
         || this.scrollElement.scrollTop
         || this.scrollElement.scrollTop;

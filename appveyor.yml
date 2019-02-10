@@ -6,6 +6,7 @@ install:
   - set CI=true
   - npm -g install npm@latest
   - set PATH=%APPDATA%\npm;%PATH%
+  - npx npm-force-resolutions
   - npm install
 matrix:
   fast_finish: true

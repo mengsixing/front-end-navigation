@@ -1,9 +1,11 @@
+
 .search {
   text-align: center;
 }
 .input-with-select .el-select .el-input {
   width: 140px;
 }
+
 
 .banner {
   text-align: center;
@@ -14,6 +16,7 @@
     max-width: 320px;
     max-height: 180px;
 }
+
 
 .navigation-github[data-v-6868e0ea] {
   text-align: right;
@@ -28,6 +31,7 @@
       width: 100%;
       height: 100%;
 }
+
 
 .commonList {
   background-color: #409eff;
@@ -94,7 +98,8 @@
   padding: 15px 10px !important;
 }
 
-.gotoTop[data-v-5fbe22c8] {
+
+.gotoTop[data-v-0fe9772c] {
   position: fixed;
   bottom: 80px;
   right: 80px;
@@ -111,6 +116,7 @@
   border-radius: 50%;
   cursor: pointer;
 }
+
 
 .el-select .el-input {
   width: 130px;

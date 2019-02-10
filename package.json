@@ -23,15 +23,16 @@
 	},
 	"homepage": "https://github.com/yhlben/front-end-navigation#readme",
 	"dependencies": {
+		"ajv": "^6.8.1",
 		"element-ui": "^2.4.6",
-		"rimraf": "^2.6.2",
-		"mini-css-extract-plugin": "^0.5.0",
-		"webpack": "^4.17.1",
-		"stylelint-webpack-plugin": "^0.10.5",
 		"html-webpack-plugin": "^3.2.0",
-		"webpack-bundle-analyzer": "^3.0.3",
-		"vue-loader": "^15.4.1",
+		"mini-css-extract-plugin": "^0.5.0",
+		"rimraf": "^2.6.2",
+		"stylelint-webpack-plugin": "^0.10.5",
 		"vue": "^2.5.17",
+		"vue-loader": "^15.4.1",
+		"webpack": "^4.17.1",
+		"webpack-bundle-analyzer": "^3.0.3",
 		"webpack-merge": "^4.1.4"
 	},
 	"devDependencies": {
@@ -69,8 +70,5 @@
 		"vue-template-compiler": "^2.5.17",
 		"webpack-cli": "^3.1.0",
 		"webpack-dev-server": "^3.1.14"
-	},
-	"resolutions": {
-		"ajv": "6.8.1"
 	}
 }

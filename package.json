@@ -29,7 +29,7 @@
 		"rimraf": "^2.6.2",
 		"stylelint-webpack-plugin": "^0.10.5",
 		"vue": "^2.5.17",
-		"vue-loader": "^15.4.1",
+		"vue-loader": "15.6.3",
 		"webpack": "^4.17.1",
 		"webpack-bundle-analyzer": "^3.0.3",
 		"webpack-merge": "^4.1.4"

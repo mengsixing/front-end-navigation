@@ -9,6 +9,10 @@
       type="hotTechnologyList"
     ></block>
     <block
+      :data="standardList"
+      type="standardList"
+    ></block>
+    <block
       :data="toolList"
       type="toolList"
     ></block>
@@ -25,7 +29,7 @@
 
 <script>
 import {
-  commonList, toolList, blogList, studyList, hotTechnologyList,
+  commonList, toolList, blogList, studyList, hotTechnologyList, standardList,
 } from '~/db/db';
 import Block from '~/components/Block.vue';
 
@@ -38,6 +42,7 @@ export default {
       blogList,
       studyList,
       hotTechnologyList,
+      standardList,
     };
   },
 };

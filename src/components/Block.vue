@@ -69,6 +69,10 @@ export default {
   @include setBackground(#67c23a);
 }
 
+.standardList {
+  @include setBackground(#eb2f96);
+}
+
 .toolList {
   @include setBackground(#e6a23c);
 }
@@ -87,6 +91,10 @@ export default {
 
 .hotTechnologyList-hover:hover {
   @include setBackground(#67c23a);
+}
+
+.standardList-hover:hover {
+  @include setBackground(#eb2f96);
 }
 
 .toolList-hover:hover {

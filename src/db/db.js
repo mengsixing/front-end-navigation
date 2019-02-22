@@ -82,10 +82,6 @@ export const commonList = {
       name: '豆瓣读书',
       url: 'https://book.douban.com/',
     },
-    {
-      name: 'ES5 规范',
-      url: 'http://es5.github.io/',
-    },
   ],
 };
 
@@ -124,6 +120,28 @@ export const hotTechnologyList = {
   ],
 };
 
+export const standardList = {
+  title: '参考规范',
+  list: [
+    {
+      name: 'ES5 规范',
+      url: 'http://es5.github.io/',
+    },
+    {
+      name: 'Licenses 规范',
+      url: 'https://choosealicense.com/licenses/',
+    },
+    {
+      name: '版本号规范',
+      url: 'https://semver.org/lang/zh-CN/',
+    },
+    {
+      name: '变量命名规范',
+      url: 'https://unbug.github.io/codelf',
+    },
+  ],
+};
+
 // 工具大全
 export const toolList = {
   title: '工具大全',
@@ -141,6 +159,14 @@ export const toolList = {
       url: 'https://www.jianguoyun.com',
     },
     {
+      name: 'Vultr',
+      url: 'https://www.vultr.com/',
+    },
+    {
+      name: 'BootCDN',
+      url: 'https://www.bootcdn.cn/',
+    },
+    {
       name: 'CodeSandbox',
       url: 'https://codesandbox.io',
     },
@@ -156,10 +182,7 @@ export const toolList = {
       name: 'Can I use',
       url: 'https://caniuse.com/',
     },
-    {
-      name: 'BootCDN',
-      url: 'https://www.bootcdn.cn/',
-    },
+
     {
       name: '网站性能检测',
       url: 'https://web.dev/',
@@ -167,10 +190,6 @@ export const toolList = {
     {
       name: '图标下载',
       url: 'https://www.easyicon.net/',
-    },
-    {
-      name: 'Vultr',
-      url: 'https://www.vultr.com/',
     },
     {
       name: 'UserAgentString',
@@ -211,10 +230,6 @@ export const toolList = {
     {
       name: 'NPM包大小检查',
       url: 'https://bundlephobia.com/',
-    },
-    {
-      name: '变量命名',
-      url: 'https://unbug.github.io/codelf',
     },
   ],
 };

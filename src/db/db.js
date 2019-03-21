@@ -163,6 +163,10 @@ export const toolList = {
       url: 'https://www.vultr.com/',
     },
     {
+      name: 'Google Analysis',
+      url: 'https://analytics.google.com,',
+    },
+    {
       name: 'BootCDN',
       url: 'https://www.bootcdn.cn/',
     },

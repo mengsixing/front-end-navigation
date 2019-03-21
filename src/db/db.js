@@ -164,7 +164,7 @@ export const toolList = {
     },
     {
       name: 'Google Analysis',
-      url: 'https://analytics.google.com,',
+      url: 'https://analytics.google.com',
     },
     {
       name: 'BootCDN',

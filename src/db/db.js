@@ -281,5 +281,9 @@ export const studyList = {
       name: '牛客网',
       url: 'https://www.nowcoder.com/',
     },
+    {
+      name: '跬步客',
+      url: 'https://www.kuibuke.com',
+    },
   ],
 };

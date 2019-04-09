@@ -75,8 +75,8 @@ export const commonList = {
       url: 'https://www.awesomes.cn/',
     },
     {
-      name: '众成翻译',
-      url: 'https://www.zcfy.cc/',
+      name: '印象笔记',
+      url: 'https://www.yinxiang.com/',
     },
     {
       name: '豆瓣读书',

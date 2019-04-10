@@ -258,6 +258,10 @@ export const blogList = {
       name: '大漠',
       url: 'https://www.w3cplus.com/',
     },
+    {
+      name: '前端路上',
+      url: 'https://refined-x.com/',
+    },
   ],
 };
 

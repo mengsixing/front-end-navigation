@@ -31,6 +31,7 @@ module.exports = smart(config, {
             loader: MiniCssExtractPlugin.loader,
           },
           'css-loader',
+          'postcss-loader',
           'sass-loader',
         ],
       },

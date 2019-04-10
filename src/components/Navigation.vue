@@ -38,6 +38,10 @@ export default {
     height: 30px;
     vertical-align: middle;
 
+    & :hover {
+      opacity: 0.8;
+    }
+
     & > img {
       width: 100%;
       height: 100%;

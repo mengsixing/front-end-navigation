@@ -4,20 +4,14 @@
       "@babel/preset-env",
       {
         "targets": {
-          "browsers": [
-            "> 1%",
-            "last 2 versions",
-            "ie >= 10"
-          ]
-        },
-        "modules": false,
-        "useBuiltIns": "entry"
+          "browsers": ["> 1%", "last 2 versions", "ie >= 10"]
+        }
       }
     ]
   ],
   "env": {
     "test": {
-      "plugins": [ "istanbul" ]
+      "plugins": ["istanbul"]
     }
   }
 }

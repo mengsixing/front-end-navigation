@@ -69,7 +69,10 @@ export const commonList = {
       name: '微信公众平台',
       url: 'https://mp.weixin.qq.com/',
     },
-
+    {
+      name: 'Linux 命令查询',
+      url: 'https://wangchujiang.com/linux-command/',
+    },
     {
       name: 'Awesomes',
       url: 'https://www.awesomes.cn/',

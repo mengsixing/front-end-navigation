@@ -117,6 +117,14 @@ export const hotTechnologyList = {
       url: 'https://nodejs.org/en/',
     },
     {
+      name: 'TypeScript',
+      url: 'https://www.tslang.cn/',
+    },
+    {
+      name: 'GraphQL',
+      url: 'http://graphql.cn/',
+    },
+    {
       name: 'Docker',
       url: 'https://docs.docker-cn.com/',
     },

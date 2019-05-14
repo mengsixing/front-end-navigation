@@ -125,6 +125,10 @@ export const hotTechnologyList = {
       url: 'http://graphql.cn/',
     },
     {
+      name: 'Babel',
+      url: 'https://www.babeljs.cn/',
+    },
+    {
       name: 'Docker',
       url: 'https://docs.docker-cn.com/',
     },
@@ -149,6 +153,10 @@ export const standardList = {
     {
       name: '变量命名规范',
       url: 'https://unbug.github.io/codelf',
+    },
+    {
+      name: 'JSON 规范',
+      url: 'https://www.json.org/json-zh.html',
     },
   ],
 };

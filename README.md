@@ -5,45 +5,34 @@
 [![Coverage Status](https://coveralls.io/repos/github/yhlben/front-end-navigation/badge.svg)](https://coveralls.io/github/yhlben/front-end-navigation) [![Greenkeeper badge](https://badges.greenkeeper.io/yhlben/front-end-navigation.svg)](https://greenkeeper.io/)
 [![David](https://img.shields.io/david/yhlben/front-end-navigation.svg)](https://david-dm.org/yhlben/front-end-navigation)
 
-> 一个前端导航，可附加到谷歌扩展程序。
+> 前端导航，搜集前端开发有价值的网站。
 
-## 使用方式
+## Preview
 
-### 线上访问
+在线预览：[https://yhlben.github.io/front-end-navigation](https://yhlben.github.io/front-end-navigation/)
 
-直接访问线上地址：[Online](https://yhlben.github.io/front-end-navigation/)
+源代码：[https://github.com/yhlben/front-end-navigation](https://github.com/yhlben/front-end-navigation)
 
-### 添加到 Chrome 扩展。
+## Features
 
-添加到 Chrome 扩展后，每打开一个新标签页，就会默认打开导航页面。
+已实现的功能：
 
-1、 生成 Chrome 扩展。
+- [x] 第三方搜索，支持 Google，Baidu，Bing。
+- [x] 导航分类展示。
+- [x] 自动发布，提交代码后自动发布到 github pages。
 
-```sh
-git clone https://github.com/yhlben/front-end-navigation.git
-npm i
-npm run build:chrome
-```
+## Technology
 
-2、 进入谷歌扩展 [Chrome extensions](chrome://extensions/)
+主要用到的技术：
 
-3、 打开开发者模式。
+- Vue：MVVM 框架，用于构建前端界面。
+- Element：基于 Vue 的组件库。
+- Webpack 打包项目，包括 vue-loader，url-loader，html-webpack-plugin，webpack 热更新等。
+- 代码质量监测，包括 eslint，stylelint，editorconfig 等配置。
+- 测试流程，使用 karma，mocha，@vue/test-utils，对项目进行单元测试。
+- 持续集成，使用 travisCI，进行自动测试，自动发布到 github pages。
 
-4、 加载已解压的扩展程序。
-
-## 项目架构
-
-1、前端使用 vue + element-ui 编写业务代码，根据静态配置的数据渲染。
-
-2、webpack 配置，包括 vue-loader，url-loader，html-webpack-plugin，webpack 热更新等。
-
-3、代码质量监测，包括 eslint，stylelint，editorconfig 等配置。
-
-4、测试流程，使用 karma，mocha，@vue/test-utils，对项目进行单元测试。
-
-5、持续集成，使用 travisCI，进行自动测试，自动发布到 github pages。
-
-## 自定义导航
+## Custom
 
 您可以自定义导航链接：
 

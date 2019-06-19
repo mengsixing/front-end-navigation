@@ -78,12 +78,12 @@ export const commonList = {
       url: 'https://www.awesomes.cn/',
     },
     {
-      name: '印象笔记',
-      url: 'https://www.yinxiang.com/',
-    },
-    {
       name: '豆瓣读书',
       url: 'https://book.douban.com/',
+    },
+    {
+      name: 'InfoQ',
+      url: 'https://www.infoq.cn/',
     },
   ],
 };
@@ -130,7 +130,7 @@ export const hotTechnologyList = {
     },
     {
       name: 'Docker',
-      url: 'https://docs.docker-cn.com/',
+      url: 'https://docs.docker.com/',
     },
   ],
 };
@@ -176,6 +176,10 @@ export const toolList = {
     {
       name: '坚果云',
       url: 'https://www.jianguoyun.com',
+    },
+    {
+      name: '印象笔记',
+      url: 'https://www.yinxiang.com/',
     },
     {
       name: 'Vultr',

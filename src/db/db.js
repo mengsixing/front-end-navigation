@@ -305,6 +305,10 @@ export const studyList = {
       url: 'https://www.geekbang.org/',
     },
     {
+      name: '力扣',
+      url: 'https://leetcode-cn.com/',
+    },
+    {
       name: '牛客网',
       url: 'https://www.nowcoder.com/',
     },

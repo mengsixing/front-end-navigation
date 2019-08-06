@@ -64,7 +64,7 @@
     "node-sass": "^4.12.0",
     "postcss-loader": "^3.0.0",
     "sass-loader": "^7.1.0",
-    "style-loader": "^0.23.1",
+    "style-loader": "^1.0.0",
     "stylelint": "^10.0.1",
     "stylelint-config-standard": "^18.3.0",
     "url-loader": "^1.1.2",

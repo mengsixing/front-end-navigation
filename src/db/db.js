@@ -85,6 +85,10 @@ export const commonList = {
       name: 'InfoQ',
       url: 'https://www.infoq.cn/',
     },
+    {
+      name: '极客教程',
+      url: 'https://www.geekjc.com/',
+    },
   ],
 };
 
@@ -315,6 +319,10 @@ export const studyList = {
     {
       name: '跬步客',
       url: 'https://www.kuibuke.com',
+    },
+    {
+      name: '极客教程',
+      url: 'https://www.geekjc.com/',
     },
   ],
 };

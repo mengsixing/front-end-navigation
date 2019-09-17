@@ -44,7 +44,7 @@
     "babel-plugin-istanbul": "^5.1.4",
     "chai": "^4.2.0",
     "coveralls": "^3.0.3",
-    "cross-env": "^5.2.0",
+    "cross-env": "^6.0.0",
     "css-loader": "^2.1.1",
     "ejs": "^2.6.1",
     "eslint": "^5.16.0",

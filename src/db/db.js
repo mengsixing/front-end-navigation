@@ -262,6 +262,14 @@ export const toolList = {
       name: 'NPM包大小检查',
       url: 'https://bundlephobia.com/',
     },
+    {
+      name: '石墨文档',
+      url: 'https://shimo.im/welcome',
+    },
+    {
+      name: '开发者手册',
+      url: 'https://cloud.tencent.com/developer/devdocs',
+    },
   ],
 };
 

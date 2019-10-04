@@ -10,6 +10,7 @@ module.exports = smart(config, {
   },
   devServer: {
     hot: true,
+    host: '0.0.0.0',
   },
   plugins: [new webpack.HotModuleReplacementPlugin()],
   externals: {

@@ -270,6 +270,10 @@ export const toolList = {
       name: '开发者手册',
       url: 'https://cloud.tencent.com/developer/devdocs',
     },
+    {
+      name: '正则大全',
+      url: 'https://any86.github.io/any-rule/'
+    }
   ],
 };
 

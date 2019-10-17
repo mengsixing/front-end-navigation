@@ -269,9 +269,13 @@ export const toolList = {
       url: 'https://cloud.tencent.com/developer/devdocs',
     },
     {
+      name: '正则大全',
+      url: 'https://any86.github.io/any-rule/'
+    },
+    {
       name: '彩云小译',
       url: 'https://fanyi.caiyunapp.com/#/web',
-    },
+    }
   ],
 };
 

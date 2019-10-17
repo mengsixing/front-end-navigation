@@ -10,5 +10,5 @@ if (process.env.NODE_ENV === 'chrome') {
 Vue.use(ElementUI);
 
 new Vue({
-  render: h => h(App),
+  render: (h) => h(App),
 }).$mount('#root');

@@ -212,9 +212,7 @@ export const toolList = {
     {
       name: 'Can I use',
       url: 'https://caniuse.com/',
-    },
-
-    {
+    }, {
       name: '网站性能检测',
       url: 'https://web.dev/',
     },
@@ -247,7 +245,7 @@ export const toolList = {
       url: 'https://github.com/wuchangming/spy-debugger',
     },
     {
-      name: 'Mock数据',
+      name: 'Mock 数据',
       url: 'https://www.easy-mock.com/',
     },
     {
@@ -255,11 +253,11 @@ export const toolList = {
       url: 'https://www.scootersoftware.com',
     },
     {
-      name: '静态网页Netlify',
+      name: '静态网页 Netlify',
       url: 'https://www.netlify.com/',
     },
     {
-      name: 'NPM包大小检查',
+      name: 'NPM 包大小检查',
       url: 'https://bundlephobia.com/',
     },
     {
@@ -267,12 +265,16 @@ export const toolList = {
       url: 'https://shimo.im/welcome',
     },
     {
-      name: '开发者手册',
+      name: '腾讯云开发者手册',
       url: 'https://cloud.tencent.com/developer/devdocs',
     },
     {
       name: '正则大全',
       url: 'https://any86.github.io/any-rule/'
+    },
+    {
+      name: '彩云小译',
+      url: 'https://fanyi.caiyunapp.com/#/web',
     }
   ],
 };

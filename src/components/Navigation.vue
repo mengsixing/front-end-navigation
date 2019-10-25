@@ -9,7 +9,7 @@
       >
         <a
           class="github"
-          href="https://github.com/yhlben/front-end-navigation"
+          href="https://github.com/lmjben/front-end-navigation"
           target="_blank"
         >
           <img

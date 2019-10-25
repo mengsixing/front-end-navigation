@@ -14,14 +14,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yhlben/front-end-navigation.git"
+    "url": "git+https://github.com/lmjben/front-end-navigation.git"
   },
-  "author": "yhlben",
+  "author": "lmjben",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/yhlben/front-end-navigation/issues"
+    "url": "https://github.com/lmjben/front-end-navigation/issues"
   },
-  "homepage": "https://github.com/yhlben/front-end-navigation#readme",
+  "homepage": "https://github.com/lmjben/front-end-navigation#readme",
   "dependencies": {
     "element-ui": "^2.12.0",
     "html-webpack-plugin": "^3.2.0",

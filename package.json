@@ -51,7 +51,7 @@
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-loader": "^3.0.2",
     "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-vue": "^5.2.3",
+    "eslint-plugin-vue": "^6.0.0",
     "file-loader": "^4.2.0",
     "karma": "^4.4.0",
     "karma-chrome-launcher": "^3.1.0",

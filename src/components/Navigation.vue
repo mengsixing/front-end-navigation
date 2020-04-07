@@ -13,7 +13,7 @@
           target="_blank"
         >
           <img
-            src="../assets/github.png"
+            :src="githubImg"
             alt="github"
           />
         </a>
@@ -23,8 +23,14 @@
 </template>
 
 <script>
+import githubImg from '../assets/github.png';
+
 export default {
-  methods: {},
+  data() {
+    return {
+      githubImg,
+    };
+  },
 };
 </script>
 

@@ -24,16 +24,8 @@ const config = {
         loader: 'eslint-loader',
       },
       {
-        test: /\.(png|jpg|jpeg|gif|eot|ttf|woff|woff2|svg|svgz)(\?.+)?$/,
-        use: [
-          {
-            loader: 'url-loader',
-            options: {
-              limit: 1000,
-              name: '[name]-[hash:8].[ext]',
-            },
-          },
-        ],
+        test: /\.(png|jpg|gif)$/i,
+        use: ['url-loader'],
       },
       {
         test: /\.js$/,

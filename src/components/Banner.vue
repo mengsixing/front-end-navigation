@@ -2,11 +2,23 @@
   <div class="banner animated bounce">
     <img
       class="banner-image"
-      src="../assets/qianduandaohang.png"
+      :src="bannerImg"
       alt="banner"
     >
   </div>
 </template>
+
+<script>
+import bannerImg from '../assets/qianduandaohang.png';
+
+export default {
+  data() {
+    return {
+      bannerImg,
+    };
+  },
+};
+</script>
 
 <style lang="scss">
 

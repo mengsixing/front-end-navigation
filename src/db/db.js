@@ -162,6 +162,10 @@ export const standardList = {
       name: 'JSON 规范',
       url: 'https://www.json.org/json-zh.html',
     },
+    {
+      name: 'JS 注释规范',
+      url: 'https://jsdoc.app',
+    },
   ],
 };
 
@@ -270,12 +274,12 @@ export const toolList = {
     },
     {
       name: '正则大全',
-      url: 'https://any86.github.io/any-rule/'
+      url: 'https://any86.github.io/any-rule/',
     },
     {
       name: '彩云小译',
       url: 'https://fanyi.caiyunapp.com/#/web',
-    }
+    },
   ],
 };
 

@@ -6,12 +6,13 @@ module.exports = {
     es6: true,
     mocha: true
   },
-  extends: ['eslint-config-airbnb-base', 'plugin:vue/essential'],
+  extends: ["eslint-config-airbnb-base", "plugin:vue/essential"],
   parserOptions: {
     ecmaVersion: 2018,
-    sourceType: 'module'
+    sourceType: "module"
   },
   rules: {
-    'import/no-unresolved': 'off'
+    "import/no-unresolved": "off",
+    'import/extensions': "off"
   }
 };

@@ -250,7 +250,7 @@ export const toolList = {
     },
     {
       name: 'Mock 数据',
-      url: 'https://www.easy-mock.com/',
+      url: 'https://www.mocky.io/',
     },
     {
       name: '文件内容比较',

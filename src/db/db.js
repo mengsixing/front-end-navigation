@@ -174,6 +174,10 @@ export const toolList = {
   title: '工具大全',
   list: [
     {
+      name: '程序员字体',
+      url: 'https://github.com/tonsky/FiraCode',
+    },
+    {
       name: '阿里云',
       url: 'https://www.aliyun.com/',
     },

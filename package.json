@@ -30,7 +30,7 @@
     "stylelint-webpack-plugin": "^1.2.3",
     "vue": "^2.6.11",
     "vue-loader": "15.9.1",
-    "webpack": "^4.42.1",
+    "webpack": "^4.43.0",
     "webpack-bundle-analyzer": "^3.6.1",
     "webpack-merge": "^4.2.2",
     "cssnano": "^4.1.10",

@@ -194,10 +194,6 @@ export const toolList = {
       url: 'https://www.yinxiang.com/',
     },
     {
-      name: 'Vultr',
-      url: 'https://www.vultr.com/',
-    },
-    {
       name: 'Google Analysis',
       url: 'https://analytics.google.com',
     },
@@ -231,10 +227,6 @@ export const toolList = {
     {
       name: 'UserAgentString',
       url: 'http://useragentstring.com/',
-    },
-    {
-      name: '爬虫商城',
-      url: 'https://www.shenjian.io/',
     },
     {
       name: '印记中国',
@@ -283,6 +275,14 @@ export const toolList = {
     {
       name: '彩云小译',
       url: 'https://fanyi.caiyunapp.com/#/web',
+    },
+    {
+      name: '浏览器默认样式',
+      url: 'https://browserdefaultstyles.com/',
+    },
+    {
+      name: '压缩 SVG 图片',
+      url: 'https://jakearchibald.github.io/svgomg/',
     },
   ],
 };

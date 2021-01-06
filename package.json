@@ -14,14 +14,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lmjben/front-end-navigation.git"
+    "url": "git+https://github.com/mengsixing/front-end-navigation.git"
   },
-  "author": "lmjben",
+  "author": "mengsixing",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/lmjben/front-end-navigation/issues"
+    "url": "https://github.com/mengsixing/front-end-navigation/issues"
   },
-  "homepage": "https://github.com/lmjben/front-end-navigation#readme",
+  "homepage": "https://github.com/mengsixing/front-end-navigation#readme",
   "dependencies": {
     "element-ui": "^2.13.0",
     "html-webpack-plugin": "^4.0.4",

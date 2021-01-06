@@ -12,6 +12,6 @@ describe('Navigation.vue', () => {
 
   it('github链接是否正确。', () => {
     const linkHref = wrapper.find('.github').attributes().href;
-    expect(linkHref).to.equal('https://github.com/lmjben/front-end-navigation');
+    expect(linkHref).to.equal('https://github.com/mengsixing/front-end-navigation');
   });
 });

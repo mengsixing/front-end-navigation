@@ -17,7 +17,7 @@ deploy:
   target-branch: gh-pages
   skip-cleanup: true
   local-dir: dist/
-  repo: lmjben/front-end-navigation
+  repo: mengsixing/front-end-navigation
   email: robot@travis.com
   name: robot
   github-token: $REPO_TOKEN

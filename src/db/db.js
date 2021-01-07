@@ -284,6 +284,10 @@ export const toolList = {
       name: '压缩 SVG 图片',
       url: 'https://jakearchibald.github.io/svgomg/',
     },
+    {
+      name: '在线工具网站',
+      url: 'https://www.jsonformatting.com/',
+    },
   ],
 };
 

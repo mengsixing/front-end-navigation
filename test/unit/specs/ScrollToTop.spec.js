@@ -1,6 +1,6 @@
 import { expect } from 'chai';
-import ScrollToTop from '~/components/ScrollToTop.vue';
 import { mount } from '@vue/test-utils';
+import ScrollToTop from '~/components/ScrollToTop.vue';
 /* eslint-disable no-unused-expressions */
 
 const wrapper = mount(ScrollToTop, {

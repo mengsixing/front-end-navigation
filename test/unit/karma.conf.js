@@ -2,11 +2,13 @@ const path = require('path');
 const webpackConfig = require('../../config/base.webpack.config.js');
 
 webpackConfig.devtool = 'inline-source-map';
+delete webpackConfig.context;
+delete webpackConfig.entry;
+delete webpackConfig.output;
 
 module.exports = (config) => {
   config.set({
-    basePath: '',
-    frameworks: ['mocha'],
+    frameworks: ['mocha', 'webpack'],
     files: ['./index.js'],
     preprocessors: {
       'index.js': ['webpack', 'sourcemap'],

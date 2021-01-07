@@ -1,8 +1,9 @@
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const { smart } = require('webpack-merge');
+// mini-css-extract-plugin 不支持 webpack5
+// const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const { merge } = require('webpack-merge');
 const config = require('./base.webpack.config');
 
-module.exports = smart(config, {
+module.exports = merge(config, {
   mode: 'production',
   entry: {
     main: './src/main.js',
@@ -10,35 +11,35 @@ module.exports = smart(config, {
   output: {
     filename: '[name]-[contenthash:8].js',
   },
-  module: {
-    rules: [
-      {
-        test: /\.css$/,
-        use: [
-          {
-            loader: MiniCssExtractPlugin.loader,
-          },
-          'css-loader',
-        ],
-      },
-      {
-        test: /\.scss$/,
-        use: [
-          {
-            loader: MiniCssExtractPlugin.loader,
-          },
-          'css-loader',
-          'postcss-loader',
-          'sass-loader',
-        ],
-      },
-    ],
-  },
+  // module: {
+  //   rules: [
+  //     {
+  //       test: /\.css$/,
+  //       use: [
+  //         {
+  //           loader: MiniCssExtractPlugin.loader,
+  //         },
+  //         'css-loader',
+  //       ],
+  //     },
+  //     {
+  //       test: /\.scss$/,
+  //       use: [
+  //         // {
+  //         //   loader: MiniCssExtractPlugin.loader,
+  //         // },
+  //         'css-loader',
+  //         'postcss-loader',
+  //         'sass-loader',
+  //       ],
+  //     },
+  //   ],
+  // },
   plugins: [
-    new MiniCssExtractPlugin({
-      filename: '[name]-[contenthash:8].css',
-      chunkFilename: '[id].css',
-    }),
+    // new MiniCssExtractPlugin({
+    //   filename: '[name]-[contenthash:8].css',
+    //   chunkFilename: '[id].css',
+    // }),
   ],
   externals: {
     vue: 'Vue',

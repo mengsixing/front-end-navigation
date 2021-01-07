@@ -1,9 +1,9 @@
 const webpack = require('webpack');
-const { smart } = require('webpack-merge');
+const { merge } = require('webpack-merge');
 
 const config = require('./base.webpack.config');
 
-module.exports = smart(config, {
+module.exports = merge(config, {
   mode: 'development',
   entry: {
     main: './src/main.js',

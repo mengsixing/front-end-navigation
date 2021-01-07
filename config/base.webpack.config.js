@@ -6,7 +6,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const config = {
   mode: 'development',
-  devtool: 'none',
+  devtool: 'eval-source-map', // 不填写就是 none
   output: {
     filename: '[name]-[hash:8].js',
     path: path.resolve(__dirname, '../dist'),
@@ -29,7 +29,7 @@ const config = {
       },
       {
         test: /\.js$/,
-        loader: ['babel-loader'],
+        use: ['babel-loader'],
       },
       {
         test: /\.css$/,

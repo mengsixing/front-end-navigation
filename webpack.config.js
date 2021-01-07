@@ -1,14 +1,19 @@
+const productionConfig = require('./config/production.webpack.config');
+const chromeConfig = require('./config/chrome.webpack.config');
+const analysisConfig = require('./config/analysis.webpack.config');
+const developmentConfig = require('./config/development.webpack.config');
+
 switch (process.env.NODE_ENV) {
   case 'production':
-    module.exports = require('./config/production.webpack.config');
+    module.exports = productionConfig;
     break;
   case 'chrome':
-    module.exports = require('./config/chrome.webpack.config');
+    module.exports = chromeConfig;
     break;
   case 'analysis':
-    module.exports = require('./config/analysis.webpack.config');
+    module.exports = analysisConfig;
     break;
   default:
-    module.exports = require('./config/development.webpack.config');
+    module.exports = developmentConfig;
     break;
 }

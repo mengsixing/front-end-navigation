@@ -22,6 +22,7 @@ export default {
   },
   mounted() {
     // 平滑滚动
+    // eslint-disable-next-line vue/no-mutating-props
     this.scrollElement.style['scroll-behavior'] = 'smooth';
     this.scrollElement.addEventListener('scroll', this.scrollToTop);
   },
@@ -39,6 +40,7 @@ export default {
       }
     },
     gotoTop() {
+      // eslint-disable-next-line vue/no-mutating-props
       this.scrollElement.scrollTop = 0;
     },
   },

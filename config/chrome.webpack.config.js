@@ -1,10 +1,9 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const { smart } = require('webpack-merge');
+const { merge } = require('webpack-merge');
 const config = require('./base.webpack.config');
 
-
-module.exports = smart(config, {
+module.exports = merge(config, {
   mode: 'production',
   entry: {
     main: './src/main.js',

@@ -18,7 +18,7 @@ jobs:
       - name: Coveralls 💉
         uses: coverallsapp/github-action@v1.1.2
         with:
-          github-token: ${{ secrets.ACCESS_TOKEN }}
+          github-token: ${{ secrets.COVERALLS_TOKEN }}
           path-to-lcov: ./test/unit/coverage/lcov.info
 
       - name: Build 🙅‍♀️

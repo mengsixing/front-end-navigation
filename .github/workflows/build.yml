@@ -21,13 +21,6 @@ jobs:
           token: ${{ secrets.CODECOV_TOKEN }}
           directory: ./test/unit/coverage/
 
-
-      # - name: Coveralls 💉
-      #   uses: coverallsapp/github-action@v1.1.2
-      #   with:
-      #     github-token: ${{ secrets.ACCESS_TOKEN }}
-      #     path-to-lcov: ./test/unit/coverage/lcov.info
-
       - name: Build 🙅‍♀️
         run: |
           npm run build

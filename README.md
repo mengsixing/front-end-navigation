@@ -1,7 +1,8 @@
 # front-end-navigation
 
 [![Build Status](https://github.com/mengsixing/front-end-navigation/workflows/CI/badge.svg)](https://github.com/mengsixing/front-end-navigation/actions)
-[![Coverage Status](https://coveralls.io/repos/github/mengsixing/front-end-navigation/badge.svg)](https://coveralls.io/github/mengsixing/front-end-navigation) [![Greenkeeper badge](https://badges.greenkeeper.io/mengsixing/front-end-navigation.svg)](https://greenkeeper.io/)
+[![codecov](https://codecov.io/gh/mengsixing/front-end-navigation/branch/master/graph/badge.svg?token=GzyYZjnkf4)](https://codecov.io/gh/mengsixing/front-end-navigation)
+[![Greenkeeper badge](https://badges.greenkeeper.io/mengsixing/front-end-navigation.svg)](https://greenkeeper.io/)
 [![David](https://img.shields.io/david/mengsixing/front-end-navigation.svg)](https://david-dm.org/mengsixing/front-end-navigation)
 
 > 前端导航，收集前端开发者最常用的网站。

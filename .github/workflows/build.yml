@@ -15,6 +15,13 @@ jobs:
           npm run lint
           npm run test
 
+      - name: Codecov 💉
+        uses: codecov/codecov-action@v1.2.1
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          directory: ./test/unit/coverage/
+
+
       # - name: Coveralls 💉
       #   uses: coverallsapp/github-action@v1.1.2
       #   with:

@@ -1,11 +1,10 @@
 # front-end-navigation
 
-[![Build Status](https://travis-ci.com/mengsixing/front-end-navigation.svg?branch=master)](https://travis-ci.com/mengsixing/front-end-navigation)
-[![Build status](https://ci.appveyor.com/api/projects/status/jxfwfppagyy4hmi7/branch/master?svg=true)](https://ci.appveyor.com/project/mengsixing/front-end-navigation/branch/master)
+[![Build Status](https://github.com/mengsixing/front-end-navigation/workflows/CI/badge.svg)](https://github.com/mengsixing/front-end-navigation/actions)
 [![Coverage Status](https://coveralls.io/repos/github/mengsixing/front-end-navigation/badge.svg)](https://coveralls.io/github/mengsixing/front-end-navigation) [![Greenkeeper badge](https://badges.greenkeeper.io/mengsixing/front-end-navigation.svg)](https://greenkeeper.io/)
 [![David](https://img.shields.io/david/mengsixing/front-end-navigation.svg)](https://david-dm.org/mengsixing/front-end-navigation)
 
-> 前端导航，搜集前端开发有价值的网站。
+> 前端导航，收集前端开发者最常用的网站。
 
 ## Preview
 
@@ -30,7 +29,7 @@
 - Webpack 打包项目，包括 vue-loader，url-loader，html-webpack-plugin，webpack 热更新等。
 - 代码质量监测，包括 eslint，stylelint，editorconfig 等配置。
 - 测试流程，使用 karma，mocha，@vue/test-utils，对项目进行单元测试。
-- 持续集成，使用 travisCI，进行自动测试，自动发布到 github pages。
+- 持续集成，使用 github action 进行自动测试，自动发布到 github pages。
 
 ## Custom
 

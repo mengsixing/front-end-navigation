@@ -10,7 +10,6 @@
     "build": "rimraf ./dist && cross-env NODE_ENV=production webpack --progress",
     "build:chrome": "rimraf ./chrome-extends/* && cp ./google-extends-manifest.json ./chrome-extends/manifest.json && cross-env NODE_ENV=chrome webpack --progress",
     "test": "cross-env NODE_ENV=chrome BABEL_ENV=test karma start test/unit/karma.conf.js",
-    "coverage": "cat test/unit/coverage/lcov.info | coveralls"
   },
   "repository": {
     "type": "git",

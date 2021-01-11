@@ -2,7 +2,12 @@ name: CI
 on: [push]
 jobs:
   build-and-deploy:
-    runs-on: ubuntu-latest
+    name: ${{ matrix.kind }} ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [macOS-latest, ubuntu-latest, windows-latest]
+
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v2.3.1

@@ -8,6 +8,7 @@
         :xs="{span:1,offset:22}"
       >
         <iframe
+          class="github"
           src="https://ghbtns.com/github-btn.html?user=mengsixing&repo=front-end-navigation&type=star&count=true"
           frameBorder="0"
           scrolling="0"

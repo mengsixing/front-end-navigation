@@ -11,7 +11,7 @@ describe('Navigation.vue', () => {
   });
 
   it('github链接是否正确。', () => {
-    const linkHref = wrapper.find('.github').attributes().href;
-    expect(linkHref).to.equal('https://github.com/mengsixing/front-end-navigation');
+    const linkHref = wrapper.find('.github').attributes().src;
+    expect(linkHref).to.equal('https://ghbtns.com/github-btn.html?user=mengsixing&repo=front-end-navigation&type=star&count=true');
   });
 });

@@ -26,23 +26,23 @@ export const commonList = {
   title: '常用网址',
   list: [
     {
-      name: '掘金',
-      url: 'https://juejin.im',
-    },
-    {
       name: '知乎',
       url: 'https://www.zhihu.com',
+    },
+    {
+      name: 'Segmentfault',
+      url: 'https://segmentfault.com',
+    },
+    {
+      name: '掘金',
+      url: 'https://juejin.im',
     },
     {
       name: 'Github',
       url: 'https://www.github.com',
     },
     {
-      name: 'GithubTrending',
-      url: 'https://www.github.com/trending',
-    },
-    {
-      name: 'Leetcode中文',
+      name: 'Leetcode 中文',
       url: 'https://leetcode-cn.com/',
     },
     {
@@ -50,20 +50,16 @@ export const commonList = {
       url: 'https://cnodejs.org',
     },
     {
+      name: 'V2EX 兴趣社区',
+      url: 'https://www.v2ex.com',
+    },
+    {
       name: 'Twitter',
       url: 'https://twitter.com/',
     },
     {
-      name: 'V2EX',
-      url: 'https://www.v2ex.com',
-    },
-    {
       name: 'Stackoverflow',
       url: 'https://stackoverflow.com/',
-    },
-    {
-      name: 'Segmentfault',
-      url: 'https://segmentfault.com',
     },
     {
       name: '微信公众平台',
@@ -74,7 +70,7 @@ export const commonList = {
       url: 'https://wangchujiang.com/linux-command/',
     },
     {
-      name: 'Awesomes',
+      name: 'Awesomes 高质量开源项目',
       url: 'https://www.awesomes.cn/',
     },
     {
@@ -82,12 +78,8 @@ export const commonList = {
       url: 'https://book.douban.com/',
     },
     {
-      name: 'InfoQ',
+      name: '互联网新闻 InfoQ',
       url: 'https://www.infoq.cn/',
-    },
-    {
-      name: '极客教程',
-      url: 'https://www.geekjc.com/',
     },
   ],
 };
@@ -178,28 +170,20 @@ export const toolList = {
       url: 'https://github.com/tonsky/FiraCode',
     },
     {
-      name: '阿里云',
-      url: 'https://www.aliyun.com/',
-    },
-    {
-      name: '七牛云',
+      name: '七牛云（免费 云存储）',
       url: 'https://www.qiniu.com/',
-    },
-    {
-      name: '坚果云',
-      url: 'https://www.jianguoyun.com',
     },
     {
       name: '印象笔记',
       url: 'https://www.yinxiang.com/',
     },
     {
-      name: 'Google Analysis',
+      name: '网站流量分析',
       url: 'https://analytics.google.com',
     },
     {
-      name: 'BootCDN',
-      url: 'https://www.bootcdn.cn/',
+      name: '静态资源 CDN',
+      url: 'https://unpkg.com',
     },
     {
       name: 'CodeSandbox',
@@ -210,18 +194,19 @@ export const toolList = {
       url: 'https://fanyi.baidu.com/',
     },
     {
-      name: 'FEHelper',
+      name: 'FEHelper（Chrome 插件）',
       url: 'https://www.baidufe.com/fehelper',
     },
     {
-      name: 'Can I use',
+      name: '代码兼容性检查',
       url: 'https://caniuse.com/',
-    }, {
+    },
+    {
       name: '网站性能检测',
       url: 'https://web.dev/',
     },
     {
-      name: '图标下载',
+      name: '小图标下载',
       url: 'https://www.easyicon.net/',
     },
     {
@@ -229,7 +214,7 @@ export const toolList = {
       url: 'http://useragentstring.com/',
     },
     {
-      name: '印记中国',
+      name: '国外文档翻译',
       url: 'https://www.docschina.org/',
     },
     {
@@ -253,7 +238,7 @@ export const toolList = {
       url: 'https://www.scootersoftware.com',
     },
     {
-      name: '静态网页 Netlify',
+      name: '搭建静态网站 Netlify',
       url: 'https://www.netlify.com/',
     },
     {
@@ -265,15 +250,15 @@ export const toolList = {
       url: 'https://shimo.im/welcome',
     },
     {
-      name: '腾讯云开发者手册',
+      name: '各框架 API 查询',
       url: 'https://cloud.tencent.com/developer/devdocs',
     },
     {
-      name: '正则大全',
+      name: '常用正则查询',
       url: 'https://any86.github.io/any-rule/',
     },
     {
-      name: '彩云小译',
+      name: '彩云小译（Chrome 插件）',
       url: 'https://fanyi.caiyunapp.com/#/web',
     },
     {
@@ -281,12 +266,8 @@ export const toolList = {
       url: 'https://browserdefaultstyles.com/',
     },
     {
-      name: '压缩 SVG 图片',
-      url: 'https://jakearchibald.github.io/svgomg/',
-    },
-    {
-      name: '在线工具网站',
-      url: 'https://www.jsonformatting.com/',
+      name: '压缩图片',
+      url: 'https://tinify.cn/',
     },
   ],
 };
@@ -310,10 +291,6 @@ export const blogList = {
     {
       name: '大漠',
       url: 'https://www.w3cplus.com/',
-    },
-    {
-      name: '前端路上',
-      url: 'https://refined-x.com/',
     },
   ],
 };
@@ -345,10 +322,6 @@ export const studyList = {
     {
       name: '跬步客',
       url: 'https://www.kuibuke.com',
-    },
-    {
-      name: '极客教程',
-      url: 'https://www.geekjc.com/',
     },
   ],
 };

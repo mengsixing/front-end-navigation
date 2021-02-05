@@ -7,51 +7,29 @@
         :offset="23"
         :xs="{span:1,offset:22}"
       >
-        <a
-          class="github"
-          href="https://github.com/mengsixing/front-end-navigation"
-          target="_blank"
+        <iframe
+          src="https://ghbtns.com/github-btn.html?user=mengsixing&repo=front-end-navigation&type=star&count=true"
+          frameBorder="0"
+          scrolling="0"
+          width="102"
+          height="20"
+          title="GitHub"
         >
-          <img
-            :src="githubImg"
-            alt="github"
-          />
-        </a>
+        </iframe>
       </el-col>
     </el-row>
   </div>
 </template>
 
 <script>
-import githubImg from '../assets/github.png';
 
 export default {
-  data() {
-    return {
-      githubImg,
-    };
-  },
+
 };
 </script>
 
 <style lang="scss" scoped>
 .navigation-github {
   text-align: right;
-
-  .github {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    vertical-align: middle;
-
-    & :hover {
-      opacity: 0.8;
-    }
-
-    & > img {
-      width: 100%;
-      height: 100%;
-    }
-  }
 }
 </style>

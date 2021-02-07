@@ -70,6 +70,10 @@ export const commonList = {
       url: 'https://wangchujiang.com/linux-command/',
     },
     {
+      name: 'Awesome JavaScript',
+      url: 'https://js.libhunt.com/',
+    },
+    {
       name: 'Awesomes 高质量开源项目',
       url: 'https://www.awesomes.cn/',
     },
@@ -291,6 +295,13 @@ export const blogList = {
     {
       name: '大漠',
       url: 'https://www.w3cplus.com/',
+    },{
+      name: '小胡子哥',
+      url: 'https://www.barretlee.com/entry/',
+    },
+    {
+      name: '凹凸实验室',
+      url: 'https://aotu.io/index.html  ',
     },
   ],
 };
@@ -322,6 +333,14 @@ export const studyList = {
     {
       name: '跬步客',
       url: 'https://www.kuibuke.com',
+    },
+    {
+      name: '极客阅读',
+      url: 'https://jikeyuedu.cn/hot',
+    },
+    {
+      name: '图雀社区',
+      url: 'https://tuture.co',
     },
   ],
 };

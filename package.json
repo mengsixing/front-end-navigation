@@ -60,7 +60,7 @@
     "karma-spec-reporter": "0.0.32",
     "karma-webpack": "^5.0.0-alpha.5",
     "mocha": "^8.2.1",
-    "node-sass": "^5.0.0",
+    "node-sass": "^7.0.0",
     "postcss-loader": "^4.1.0",
     "sass-loader": "^10.1.0",
     "style-loader": "^2.0.0",
